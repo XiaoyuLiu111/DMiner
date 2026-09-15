@@ -1,8 +1,8 @@
-**DMiner: Synthesizing graph queries from demonstrations through graph mining and deductive reasoning.**
+**DMiner: Synthesizing graph queries from demonstrations through graph mining and deductive reasoning**
 
-DMiner is a **program synthesis tool that automatically constructs graph queries from user demonstrations**. Users provide small input graphs and tables of symbolic expressions describing their intended computations. DMiner infers the graph patterns, filtering conditions, and return expressions needed to construct a query consistent with those demonstrations.
+DMiner is a **program synthesis tool that automatically constructs graph queries from user demonstrations**. Users provide small input graphs and tables of computation expressions describing their intended computations. DMiner infers the graph patterns, filtering conditions, and return expressions needed to construct a query consistent with those demonstrations.
 
-The approach combines **graph mining with deductive reasoning** to make synthesis efficient. Graph mining discovers candidate query structures, while deductive reasoning turns output mismatches into logical constraints that eliminate entire families of incorrect candidates. Constraint optimization then constructs a concise filtering predicate, yielding an executable graph query.
+The approach combines **graph mining with deductive reasoning** to make synthesis efficient. Graph mining discovers candidate query sketches, while deductive reasoning analyzes logical constraints that eliminate entire families of incorrect query candidates. Then completes the query sketches through solving the constraints derived by the previous steps, yielding an executable graph query.
 
 [Paper](https://doi.org/10.5281/zenodo.21913286)
 
@@ -1698,14 +1698,6 @@ The approach combines **graph mining with deductive reasoning** to make synthesi
 </svg>
 
 <img width="1442" height="380" alt="dminer-workflow" src="https://github.com/user-attachments/assets/f1470ff9-62ec-4d48-926b-2aa575377d53" />
-
-
-
-### Deductive reasoning at the core
-
-Each stage narrows the gap between user intent and an executable query: demonstrations capture the desired computation, graph mining discovers relevant structure, and symbolic search explores candidate solutions. Evaluation checks consistency with the demonstrations, while constraint optimization favors concise queries.
-
-**A failed candidate provides information for the next search step.** DMiner uses deductive reasoning to generalize an observed mismatch into logical constraints, ruling out entire families of incorrect candidates. This feedback loop reduces redundant exploration and focuses synthesis on the remaining possibilities. The paper’s ablation study measures the contribution of deduction and graph-mining pruning.
 
 ## Installation
 
