@@ -1703,6 +1703,8 @@ The approach combines graph mining and deductive reasoning for efficient graph q
 
 ## ⚙️Installation
 
+Please download code from https://zenodo.org/records/21930599 .
+
 The research artifact runs in **Docker**, with Neo4j for query evaluation.
 
 - Tested on Linux with Docker **27.5.0**; Intel hardware is recommended by the artifact authors.
