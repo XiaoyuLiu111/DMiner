@@ -1,12 +1,14 @@
 # DMiner: Synthesizing graph queries from demonstrations through graph mining and deductive reasoning
 
+## What is DMiner
 DMiner is a **program synthesis tool that automatically constructs graph queries from user demonstrations**. Users provide small input graphs and tables of computation expressions describing their intended computations. DMiner infers the graph patterns, filtering conditions, and return expressions needed to construct a query consistent with those demonstrations.
 
-The approach combines **graph mining with deductive reasoning** to make synthesis efficient. Graph mining discovers candidate query sketches, while deductive reasoning analyzes logical constraints that eliminate entire families of incorrect query candidates. Then completes the query sketches through solving the constraints derived by the previous steps, yielding an executable graph query.
+[📄 Paper](https://doi.org/10.5281/zenodo.21913286) | [🧪 Artifact](https://zenodo.org/records/21930599)
 
-[Paper](https://doi.org/10.5281/zenodo.21913286)
+## What is the synthesis approach
+The approach combines graph mining and deductive reasoning for efficient graph query synthesis. Graph mining discovers structural patterns to generate candidate query sketches, while deductive reasoning derives logical constraints to rule out groups of incorrect candidates. Finally, completes the query sketches through solving the constraints derived by the previous steps, yielding an executable graph query.
 
-## Workflow
+### Workflow
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1081.44pt" height="285.12pt" viewBox="0 0 1081.44 285.12">
 <defs>
@@ -1699,7 +1701,7 @@ The approach combines **graph mining with deductive reasoning** to make synthesi
 
 <img width="1442" height="380" alt="dminer-workflow" src="https://github.com/user-attachments/assets/f1470ff9-62ec-4d48-926b-2aa575377d53" />
 
-## Installation
+## ⚙️Installation
 
 The research artifact runs in **Docker**, with Neo4j for query evaluation.
 
