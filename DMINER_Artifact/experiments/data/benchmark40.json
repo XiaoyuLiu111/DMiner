@@ -1,0 +1,71 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Student",
+                        "GPA": 3,
+                        "class": "Sophomore"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Student",
+                        "GPA": 3,
+                        "class": "Sophomore"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Student",
+                        "GPA": 3,
+                        "class": "Freshman"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "Student",
+                        "GPA": 3,
+                        "class": "Sophomore"
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "Student",
+                        "GPA": 3,
+                        "class": "Junior"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Student",
+                        "GPA": 4,
+                        "class": "Sophomore"
+                    },
+                    {
+                        "element_id": "6",
+                        "label": "Student",
+                        "GPA": 4,
+                        "class": "Senior"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping1": {
+                "nodes": [],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [],
+                "edges": []
+            },
+            "mapping3": [
+                {
+                    "operator": "avg",
+                    "property": "GPA",
+                    "data": ["n0", "n1", "n3", "n5"],
+                    "lhs": {},
+                    "rhs": {}
+                }
+            ],
+            "correspondence": [["exp0"]]
+        }
+    ]
+}

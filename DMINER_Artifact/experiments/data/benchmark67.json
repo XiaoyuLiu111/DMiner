@@ -1,0 +1,558 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Category",
+                        "name": "Meat"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Category",
+                        "name": "Grains"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Customer",
+                        "country": "USA",
+                        "city": "Nantes",
+                        "name": "Janine Labrune"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "Customer",
+                        "country": "uk",
+                        "city": "London",
+                        "name": "Elizabeth Brown"
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "Order",
+                        "shipCountry": "Venezuela",
+                        "shipAddress": "P.O. Box 555"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Order",
+                        "shipCountry": "Mexico",
+                        "shipAddress": "Avda. de la Constitución 2222"
+                    },
+                    {
+                        "element_id": "6",
+                        "label": "Product",
+                        "unitPrice": 190,
+                        "productName": "Tourtière"
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "Product",
+                        "unitPrice": 201,
+                        "productName": "Perth Pasties"
+                    },
+                    {
+                        "element_id": "8",
+                        "label": "Product",
+                        "unitPrice": 400,
+                        "productName": "Gnocchi di nonna Alice"
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "Supplier",
+                        "country": "Singapore",
+                        "companyName": "Leka Trading"
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "Supplier",
+                        "country": "Italy",
+                        "companyName": "Pasta Buttini s.r.l."
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "Order",
+                        "shipCountry": "44000",
+                        "shipAddress": "67"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "PURCHASED",
+                        "element_id": "0",
+                        "start": "2",
+                        "end": "4"
+                    },
+                    {
+                        "label": "ORDERS",
+                        "element_id": "1",
+                        "start": "4",
+                        "end": "6"
+                    },
+                    {
+                        "label": "PART_OF",
+                        "element_id": "2",
+                        "start": "6",
+                        "end": "0"
+                    },
+                    {
+                        "label": "SUPPLIES",
+                        "element_id": "3",
+                        "start": "9",
+                        "end": "6"
+                    },
+                    {
+                        "label": "PURCHASED",
+                        "element_id": "4",
+                        "start": "3",
+                        "end": "5"
+                    },
+                    {
+                        "label": "ORDERS",
+                        "element_id": "5",
+                        "start": "5",
+                        "end": "7"
+                    },
+                    {
+                        "label": "PART_OF",
+                        "element_id": "6",
+                        "start": "7",
+                        "end": "0"
+                    },
+                    {
+                        "label": "SUPPLIES",
+                        "element_id": "7",
+                        "start": "10",
+                        "end": "7"
+                    },
+                    {
+                        "label": "SUPPLIES",
+                        "element_id": "8",
+                        "start": "10",
+                        "end": "8"
+                    },
+                    {
+                        "label": "PART_OF",
+                        "element_id": "9",
+                        "start": "8",
+                        "end": "1"
+                    },
+                    {
+                        "label": "PURCHASED",
+                        "element_id": "10",
+                        "start": "3",
+                        "end": "11"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "9"
+                            ],
+                            "Leka Trading"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "6"
+                            ],
+                            "Tourtière"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "companyName"
+                    },
+                    {
+                        "output": 1,
+                        "property": "productName"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "n1"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "6",
+                        "label": "Category",
+                        "name": "Meat"
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "Category",
+                        "name": "Grains"
+                    },
+                    {
+                        "element_id": "8",
+                        "label": "Customer",
+                        "country": "USA",
+                        "city": "Portland",
+                        "name": "Liz Nixon"
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "Order",
+                        "shipCountry": "Venezuela",
+                        "shipAddress": "P.O. Box 577"
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "Order",
+                        "shipCountry": "Argentina",
+                        "shipAddress": "P.O. Box 57"
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "Product",
+                        "unitPrice": 150,
+                        "productName": "Tourtiere"
+                    },
+                    {
+                        "element_id": "16",
+                        "label": "Product",
+                        "unitPrice": 350,
+                        "productName": "Perth Pasties"
+                    },
+                    {
+                        "element_id": "17",
+                        "label": "Product",
+                        "unitPrice": 310,
+                        "productName": "Gnocchi di nonna Alice"
+                    },
+                    {
+                        "element_id": "18",
+                        "label": "Supplier",
+                        "country": "Singapore",
+                        "companyName": "Leka"
+                    },
+                    {
+                        "element_id": "19",
+                        "label": "Supplier",
+                        "country": "Italy",
+                        "companyName": "Pasta Buttini s.r.l."
+                    },
+                    {
+                        "element_id": "20",
+                        "label": "Order",
+                        "shipCountry": "USA",
+                        "shipAddress": "89 Jefferson Way Suite 2"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "PURCHASED",
+                        "element_id": "5",
+                        "start": "8",
+                        "end": "9"
+                    },
+                    {
+                        "label": "ORDERS",
+                        "element_id": "6",
+                        "start": "9",
+                        "end": "11"
+                    },
+                    {
+                        "label": "PART_OF",
+                        "element_id": "7",
+                        "start": "11",
+                        "end": "6"
+                    },
+                    {
+                        "label": "ORDERS",
+                        "element_id": "8",
+                        "start": "10",
+                        "end": "11"
+                    },
+                    {
+                        "label": "SUPPLIES",
+                        "element_id": "9",
+                        "start": "18",
+                        "end": "11"
+                    },
+                    {
+                        "label": "SUPPLIES",
+                        "element_id": "14",
+                        "start": "19",
+                        "end": "16"
+                    },
+                    {
+                        "label": "PART_OF",
+                        "element_id": "15",
+                        "start": "16",
+                        "end": "7"
+                    },
+                    {
+                        "label": "PART_OF",
+                        "element_id": "16",
+                        "start": "17",
+                        "end": "7"
+                    },
+                    {
+                        "label": "ORDERS",
+                        "element_id": "17",
+                        "start": "10",
+                        "end": "16"
+                    },
+                    {
+                        "label": "ORDERS",
+                        "element_id": "18",
+                        "start": "20",
+                        "end": "16"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "18"
+                            ],
+                            "Leka"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "11"
+                            ],
+                            "Tourtiere"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "companyName"
+                    },
+                    {
+                        "output": 1,
+                        "property": "productName"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "n1"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Category",
+                        "name": "Meat"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Category",
+                        "name": "Grains"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Customer",
+                        "country": "Canada",
+                        "city": "Vancouver",
+                        "name": "Yoshi Tannamuri"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "Customer",
+                        "country": "France",
+                        "city": "Marseille",
+                        "name": "Laurence Lebihan"
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "Order",
+                        "shipCountry": "USA",
+                        "shipAddress": "P.O. Box 317"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Order",
+                        "shipCountry": "Canada",
+                        "shipAddress": "Avda. de la Constitución 2221"
+                    },
+                    {
+                        "element_id": "6",
+                        "label": "Product",
+                        "unitPrice": 200,
+                        "productName": "Coconut Candy"
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "Product",
+                        "unitPrice": 350,
+                        "productName": "Pep Pasties"
+                    },
+                    {
+                        "element_id": "8",
+                        "label": "Product",
+                        "unitPrice": 350,
+                        "productName": "Gnocchi di Gelato"
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "Supplier",
+                        "country": "Singapore",
+                        "companyName": "Leka Trading I.O"
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "Supplier",
+                        "country": "Singapore",
+                        "companyName": "Pasta"
+                    },
+                    {
+                        "element_id": "22",
+                        "label": "Order",
+                        "shipCountry": "13008",
+                        "shipAddress": "12"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "PURCHASED",
+                        "element_id": "0",
+                        "start": "2",
+                        "end": "4"
+                    },
+                    {
+                        "label": "ORDERS",
+                        "element_id": "1",
+                        "start": "4",
+                        "end": "6"
+                    },
+                    {
+                        "label": "PART_OF",
+                        "element_id": "2",
+                        "start": "6",
+                        "end": "0"
+                    },
+                    {
+                        "label": "SUPPLIES",
+                        "element_id": "3",
+                        "start": "9",
+                        "end": "6"
+                    },
+                    {
+                        "label": "PURCHASED",
+                        "element_id": "4",
+                        "start": "3",
+                        "end": "5"
+                    },
+                    {
+                        "label": "ORDERS",
+                        "element_id": "5",
+                        "start": "5",
+                        "end": "7"
+                    },
+                    {
+                        "label": "PART_OF",
+                        "element_id": "6",
+                        "start": "7",
+                        "end": "0"
+                    },
+                    {
+                        "label": "SUPPLIES",
+                        "element_id": "7",
+                        "start": "10",
+                        "end": "7"
+                    },
+                    {
+                        "label": "SUPPLIES",
+                        "element_id": "8",
+                        "start": "10",
+                        "end": "8"
+                    },
+                    {
+                        "label": "PART_OF",
+                        "element_id": "9",
+                        "start": "8",
+                        "end": "1"
+                    },
+                    {
+                        "label": "PURCHASED",
+                        "element_id": "20",
+                        "start": "3",
+                        "end": "22"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "9"
+                            ],
+                            "Leka Trading I.O"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "6"
+                            ],
+                            "Coconut Candy"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "companyName"
+                    },
+                    {
+                        "output": 1,
+                        "property": "productName"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "n1"
+                ]
+            ]
+        }
+    ]
+}

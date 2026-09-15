@@ -1,0 +1,185 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "7",
+                        "label": "Person",
+                        "born": 1972,
+                        "name": "Wil Wheaton"
+                    },
+                    {
+                        "element_id": "8",
+                        "label": "Movie",
+                        "title": "Stand By Me"
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "Person",
+                        "born": 1970,
+                        "name": "River Phoenix"
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "Person",
+                        "born": 1956,
+                        "name": "Tom Hanks"
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "Movie",
+                        "title": "Forrest Gump"
+                    },
+                    {
+                        "element_id": "12",
+                        "label": "Person",
+                        "born": 1976,
+                        "name": "Audrey Tautou"
+                    },
+                    {
+                        "element_id": "13",
+                        "label": "Movie",
+                        "title": "The Da Vinci Code"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "3",
+                        "start": "7",
+                        "end": "8",
+                        "role": "Gordie Lachance"
+                    },
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "4",
+                        "start": "10",
+                        "end": "11",
+                        "role": "Forrest Gump"
+                    },
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "5",
+                        "start": "12",
+                        "end": "13",
+                        "role": "Sophie Neveu"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "7"
+                            ],
+                            "CompleteNode7"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Person",
+                        "born": 1970,
+                        "name": "River Phoenix"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Movie",
+                        "title": "Stand By Me"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Person",
+                        "born": 1971,
+                        "name": "Corey Scott Feldman "
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "0",
+                        "start": "0",
+                        "end": "1",
+                        "role": "Chris Chambers"
+                    },
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "1",
+                        "start": "2",
+                        "end": "1",
+                        "role": "Teddy Duchamp"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "CompleteNode0"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "2"
+                            ],
+                            "CompleteNode2"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    },
+                    {
+                        "output": 1,
+                        "property": "full"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ],
+                [
+                    "n1"
+                ]
+            ]
+        }
+    ]
+}

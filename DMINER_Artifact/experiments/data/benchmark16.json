@@ -1,0 +1,230 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "1",
+                        "label": "Person"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Person"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "Person"
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "Bank"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Bank"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "WORKS_AT",
+                        "element_id": "0",
+                        "start": "1",
+                        "end": "4"
+                    },
+                    {
+                        "label": "BANKS_AT",
+                        "element_id": "1",
+                        "start": "3",
+                        "end": "4"
+                    },
+                    {
+                        "label": "WORKS_AT",
+                        "element_id": "2",
+                        "start": "2",
+                        "end": "5"
+                    },
+                    {
+                        "label": "BANKS_AT",
+                        "element_id": "3",
+                        "start": "3",
+                        "end": "5"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "3"
+                            ],
+                            "CompleteNode3"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "3"
+                            ],
+                            "CompleteNode3"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    },
+                    {
+                        "output": 1,
+                        "property": "full"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ],
+                [
+                    "n1"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "1",
+                        "label": "Person"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Person"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "Person"
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "Bank"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Bank"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "BANKS_AT",
+                        "element_id": "1",
+                        "start": "1",
+                        "end": "4"
+                    },
+                    {
+                        "label": "BANKS_AT",
+                        "element_id": "2",
+                        "start": "1",
+                        "end": "5"
+                    },
+                    {
+                        "label": "BANKS_AT",
+                        "element_id": "4",
+                        "start": "2",
+                        "end": "4"
+                    },
+                    {
+                        "label": "BANKS_AT",
+                        "element_id": "5",
+                        "start": "3",
+                        "end": "5"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "1"
+                            ],
+                            "CompleteNode1"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "1"
+                            ],
+                            "CompleteNode1"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "2"
+                            ],
+                            "CompleteNode2"
+                        ]
+                    },
+                    {
+                        "output": 3,
+                        "input": [
+                            [
+                                "3"
+                            ],
+                            "CompleteNode3"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    },
+                    {
+                        "output": 1,
+                        "property": "full"
+                    },
+                    {
+                        "output": 2,
+                        "property": "full"
+                    },
+                    {
+                        "output": 3,
+                        "property": "full"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ],
+                [
+                    "n1"
+                ],
+                [
+                    "n2"
+                ],
+                [
+                    "n3"
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+benchmarkID	query1	query2	query3	query4	Output1	Output2	Output3	Output4
+100	create (a: Person {age: 60, id: 1})-[:PARENT {id: 2}]->(b: Person {age: 40, id: 3})				[(n1.age-n3.age)]			
+101	create (a: Person {name: "A", id: 1})-[:PARENT {id: 2}]->(b: Person {name: "B", id: 3})-[:PARENT {id: 4}]->(c: Person {name: "C", id: 5})	create (a: Person {name: "E", id: 1})-[:PARENT {id: 2}]->(b: Person {name: "F", id: 3})			[(n1.name, n3.name), (n3.name, n5.name)]	[(n1.name, n3.name)]		
+102	create (a: Person {id: 1})-[:PARENT {id: 2, years:40}]->(b: Person {id: 3})-[:PARENT {id: 4, years:30}]->(c: Person {id: 5})	create (a: Person {id: 1})-[:PARENT {id: 2, years:20}]->(b: Person {id: 3})			[(average(e4.years))]	[(average(e2.years))]		

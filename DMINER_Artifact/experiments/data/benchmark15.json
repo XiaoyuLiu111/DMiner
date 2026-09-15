@@ -1,0 +1,337 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Person",
+                        "name": "Jack",
+                        "age": 27
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Person",
+                        "name": "John",
+                        "age": 29
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Person",
+                        "name": "Dim",
+                        "age": 34
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "KNOWS",
+                        "element_id": "0",
+                        "start": "0",
+                        "end": "1",
+                        "since": 2012
+                    },
+                    {
+                        "label": "KNOWS",
+                        "element_id": "3",
+                        "start": "1",
+                        "end": "2",
+                        "since": 2007
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "Jack"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "1"
+                            ],
+                            "John"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "2"
+                            ],
+                            "Dim"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "name"
+                    },
+                    {
+                        "output": 1,
+                        "property": "name"
+                    },
+                    {
+                        "output": 2,
+                        "property": "name"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ],
+                [
+                    "n1"
+                ],
+                [
+                    "n2"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Person",
+                        "name": "Peter",
+                        "age": 25
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Person",
+                        "name": "Kate",
+                        "age": 32
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Person",
+                        "name": "Kerry",
+                        "age": 17
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "Person",
+                        "name": "Lim",
+                        "age": 10
+                    }
+                ],
+                "edges": []
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "Peter"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "1"
+                            ],
+                            "Kate"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "2"
+                            ],
+                            "Kerry"
+                        ]
+                    },
+                    {
+                        "output": 3,
+                        "input": [
+                            [
+                                "3"
+                            ],
+                            "Lim"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "name"
+                    },
+                    {
+                        "output": 1,
+                        "property": "name"
+                    },
+                    {
+                        "output": 2,
+                        "property": "name"
+                    },
+                    {
+                        "output": 3,
+                        "property": "name"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ],
+                [
+                    "n1"
+                ],
+                [
+                    "n2"
+                ],
+                [
+                    "n3"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Person",
+                        "name": "Andy",
+                        "age": 36
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Person",
+                        "name": "Timothy",
+                        "age": 38
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Person",
+                        "name": "Peter",
+                        "age": 35
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "Person",
+                        "name": "Lisa",
+                        "age": 48
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "Person",
+                        "name": "John",
+                        "age": 34
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Person",
+                        "name": "Susan",
+                        "age": 32
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "KNOWS",
+                        "element_id": "0",
+                        "start": "0",
+                        "end": "1",
+                        "since": 2012
+                    },
+                    {
+                        "label": "KNOWS",
+                        "element_id": "1",
+                        "start": "0",
+                        "end": "2",
+                        "since": 1999
+                    },
+                    {
+                        "label": "KNOWS",
+                        "element_id": "2",
+                        "start": "2",
+                        "end": "3",
+                        "since": 2005
+                    },
+                    {
+                        "label": "KNOWS",
+                        "element_id": "3",
+                        "start": "3",
+                        "end": "4",
+                        "since": 2010
+                    },
+                    {
+                        "label": "KNOWS",
+                        "element_id": "4",
+                        "start": "4",
+                        "end": "5",
+                        "since": 2021
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "4"
+                            ],
+                            "John"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "5"
+                            ],
+                            "Susan"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "name"
+                    },
+                    {
+                        "output": 1,
+                        "property": "name"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ],
+                [
+                    "n1"
+                ]
+            ]
+        }
+    ]
+}

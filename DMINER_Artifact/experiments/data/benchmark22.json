@@ -1,0 +1,68 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Person",
+                        "name": "Jake",
+                        "age": 20
+                    }
+                ],
+                "edges": []
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "Jake"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "name"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [
+                {
+                    "operator": "count",
+                    "property": "full",
+                    "data": ["n0"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                 {
+                    "operator": "min",
+                    "property": "age",
+                    "data": ["n0"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                 {
+                    "operator": "max",
+                    "property": "age",
+                    "data": ["n0"],
+                    "lhs": {},
+                    "rhs": {}
+                }
+            ],
+            "correspondence": [
+                [
+                    "n0" ,"exp0", "exp1", "exp2"
+                ]
+            ]
+        }
+    ]
+}

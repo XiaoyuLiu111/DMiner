@@ -1,0 +1,603 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Person",
+                        "name": "Charlie Sheen"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Person",
+                        "name": "Martin Sheen"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Person",
+                        "name": "Michael Douglas"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "Person",
+                        "name": "Oliver Stone"
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "Person",
+                        "name": "Rob Reiner"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Movie",
+                        "title": "Wall Street"
+                    },
+                    {
+                        "element_id": "6",
+                        "label": "Movie",
+                        "title": "The American President"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "0",
+                        "start": "0",
+                        "end": "5",
+                        "role": "Bud Fox"
+                    },
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "1",
+                        "start": "1",
+                        "end": "5",
+                        "role": "Carl Fox"
+                    },
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "2",
+                        "start": "2",
+                        "end": "5",
+                        "role": "Gordon Gekko"
+                    },
+                    {
+                        "label": "DIRECTED",
+                        "element_id": "3",
+                        "start": "3",
+                        "end": "5"
+                    },
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "4",
+                        "start": "1",
+                        "end": "6",
+                        "role": "A.J. MacInerney"
+                    },
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "5",
+                        "start": "2",
+                        "end": "6",
+                        "role": "President Andrew Shepherd"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "2"
+                            ],
+                            "CompleteNode2"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "5"
+                            ],
+                            "CompleteNode5"
+                        ]
+                    },
+                    {
+                        "output": 4,
+                        "input": [
+                            [
+                                "3"
+                            ],
+                            "CompleteNode3"
+                        ]
+                    },
+                    {
+                        "output": 5,
+                        "input": [
+                            [
+                                "1"
+                            ],
+                            "CompleteNode1"
+                        ]
+                    },
+                    {
+                        "output": 7,
+                        "input": [
+                            [
+                                "5"
+                            ],
+                            "CompleteNode5"
+                        ]
+                    },
+                    {
+                        "output": 9,
+                        "input": [
+                            [
+                                "3"
+                            ],
+                            "CompleteNode3"
+                        ]
+                    },
+                    {
+                        "output": 10,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "CompleteNode0"
+                        ]
+                    },
+                    {
+                        "output": 12,
+                        "input": [
+                            [
+                                "5"
+                            ],
+                            "CompleteNode5"
+                        ]
+                    },
+                    {
+                        "output": 14,
+                        "input": [
+                            [
+                                "3"
+                            ],
+                            "CompleteNode3"
+                        ]
+                    }
+                ],
+                "edges": [
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "2"
+                            ],
+                            "CompleteEdge2"
+                        ]
+                    },
+                    {
+                        "output": 3,
+                        "input": [
+                            [
+                                "3"
+                            ],
+                            "CompleteEdge3"
+                        ]
+                    },
+                    {
+                        "output": 6,
+                        "input": [
+                            [
+                                "1"
+                            ],
+                            "CompleteEdge1"
+                        ]
+                    },
+                    {
+                        "output": 8,
+                        "input": [
+                            [
+                                "3"
+                            ],
+                            "CompleteEdge3"
+                        ]
+                    },
+                    {
+                        "output": 11,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "CompleteEdge0"
+                        ]
+                    },
+                    {
+                        "output": 13,
+                        "input": [
+                            [
+                                "3"
+                            ],
+                            "CompleteEdge3"
+                        ]
+                    }
+                ]
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    },
+                    {
+                        "output": 2,
+                        "property": "full"
+                    },
+                    {
+                        "output": 4,
+                        "property": "full"
+                    },
+                    {
+                        "output": 5,
+                        "property": "full"
+                    },
+                    {
+                        "output": 7,
+                        "property": "full"
+                    },
+                    {
+                        "output": 9,
+                        "property": "full"
+                    },
+                    {
+                        "output": 10,
+                        "property": "full"
+                    },
+                    {
+                        "output": 12,
+                        "property": "full"
+                    },
+                    {
+                        "output": 14,
+                        "property": "full"
+                    }
+                ],
+                "edges": [
+                    {
+                        "output": 1,
+                        "property": "full"
+                    },
+                    {
+                        "output": 3,
+                        "property": "full"
+                    },
+                    {
+                        "output": 6,
+                        "property": "full"
+                    },
+                    {
+                        "output": 8,
+                        "property": "full"
+                    },
+                    {
+                        "output": 11,
+                        "property": "full"
+                    },
+                    {
+                        "output": 13,
+                        "property": "full"
+                    }
+                ]
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "e1",
+                    "n2",
+                    "e3",
+                    "n4"
+                ],
+                [
+                    "n5",
+                    "e6",
+                    "n7",
+                    "e8",
+                    "n9"
+                ],
+                [
+                    "n10",
+                    "e11",
+                    "n12",
+                    "e13",
+                    "n14"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "4",
+                        "label": "Person",
+                        "name": "Charlie Sheen"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Person",
+                        "name": "Martin Sheen"
+                    },
+                    {
+                        "element_id": "6",
+                        "label": "Person",
+                        "name": "Oliver"
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "Movie",
+                        "title": "Wall Street"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "2",
+                        "start": "4",
+                        "end": "7",
+                        "role": "Bud Fox"
+                    },
+                    {
+                        "label": "DIRECTED",
+                        "element_id": "3",
+                        "start": "6",
+                        "end": "7"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "4"
+                            ],
+                            "CompleteNode4"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "7"
+                            ],
+                            "CompleteNode7"
+                        ]
+                    },
+                    {
+                        "output": 4,
+                        "input": [
+                            [
+                                "6"
+                            ],
+                            "CompleteNode6"
+                        ]
+                    }
+                ],
+                "edges": [
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "2"
+                            ],
+                            "CompleteEdge2"
+                        ]
+                    },
+                    {
+                        "output": 3,
+                        "input": [
+                            [
+                                "3"
+                            ],
+                            "CompleteEdge3"
+                        ]
+                    }
+                ]
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    },
+                    {
+                        "output": 2,
+                        "property": "full"
+                    },
+                    {
+                        "output": 4,
+                        "property": "full"
+                    }
+                ],
+                "edges": [
+                    {
+                        "output": 1,
+                        "property": "full"
+                    },
+                    {
+                        "output": 3,
+                        "property": "full"
+                    }
+                ]
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "e1",
+                    "n2",
+                    "e3",
+                    "n4"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Person",
+                        "name": "Charlie Sheen"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Person",
+                        "name": "Martin Sheen"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Person",
+                        "name": "Oliver Stone"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "Person",
+                        "name": "Orlando Jones"
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "Person",
+                        "name": "Howard Deautch"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Movie",
+                        "title": "Wall Street"
+                    },
+                    {
+                        "element_id": "6",
+                        "label": "Movie",
+                        "title": "The Replacements"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "0",
+                        "start": "1",
+                        "end": "5",
+                        "role": "Carl Fox"
+                    },
+                    {
+                        "label": "DIRECTED",
+                        "element_id": "1",
+                        "start": "2",
+                        "end": "5"
+                    },
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "2",
+                        "start": "3",
+                        "end": "6",
+                        "role": "Bud Fox"
+                    },
+                    {
+                        "label": "DIRECTED",
+                        "element_id": "3",
+                        "start": "4",
+                        "end": "6"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "1"
+                            ],
+                            "CompleteNode1"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "5"
+                            ],
+                            "CompleteNode5"
+                        ]
+                    },
+                    {
+                        "output": 4,
+                        "input": [
+                            [
+                                "2"
+                            ],
+                            "CompleteNode2"
+                        ]
+                    }
+                ],
+                "edges": [
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "CompleteEdge0"
+                        ]
+                    },
+                    {
+                        "output": 3,
+                        "input": [
+                            [
+                                "1"
+                            ],
+                            "CompleteEdge1"
+                        ]
+                    }
+                ]
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    },
+                    {
+                        "output": 2,
+                        "property": "full"
+                    },
+                    {
+                        "output": 4,
+                        "property": "full"
+                    }
+                ],
+                "edges": [
+                    {
+                        "output": 1,
+                        "property": "full"
+                    },
+                    {
+                        "output": 3,
+                        "property": "full"
+                    }
+                ]
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "e1",
+                    "n2",
+                    "e3",
+                    "n4"
+                ]
+            ]
+        }
+    ]
+}

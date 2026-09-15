@@ -1,0 +1,242 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "4",
+                        "label": "Order",
+                        "shipCity": "Oulu",
+                        "shipVia": 3,
+                        "customerID": "WARTH",
+                        "shipName": "Wartian Herkku",
+                        "shipPostalCode": "90110",
+                        "shipCountry": "Finland",
+                        "shipAddress": "Torikatu 38"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Customer",
+                        "country": "USA",
+                        "city": "Nantes",
+                        "name": "Janine Labrune"
+                    },
+                    {
+                        "element_id": "6",
+                        "label": "Category",
+                        "name": "Meat"
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "Product",
+                        "supplierID": "21",
+                        "productID": "46",
+                        "productName": "Spegesild"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "ORDERS",
+                        "element_id": "3",
+                        "start": "4",
+                        "end": "7"
+                    },
+                    {
+                        "label": "PURCHASED",
+                        "element_id": "4",
+                        "start": "5",
+                        "end": "4"
+                    },
+                    {
+                        "label": "PART_OF",
+                        "element_id": "5",
+                        "start": "7",
+                        "end": "6"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "7"
+                            ],
+                            "Spegesild"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "productName"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "4",
+                        "label": "Order",
+                        "shipCity": "Seattle",
+                        "shipVia": 1,
+                        "customerID": "WHITC",
+                        "shipName": "White Clover Markets",
+                        "shipPostalCode": "98124",
+                        "shipCountry": "USA",
+                        "shipAddress": "1029-12th Ave. S."
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Order",
+                        "shipCity": "Lander",
+                        "shipVia": 2,
+                        "customerID": "SPLIR",
+                        "shipName": "Split Rail Beer & Ale",
+                        "shipPostalCode": "82520",
+                        "shipCountry": "USA",
+                        "shipAddress": "P.O. Box 555"
+                    },
+                    {
+                        "element_id": "6",
+                        "label": "Product",
+                        "supplierID": "21",
+                        "productID": "46",
+                        "productName": "Spegesild"
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "Product",
+                        "supplierID": "20",
+                        "productID": "47",
+                        "productName": "Snail"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "ORDERS",
+                        "element_id": "1",
+                        "start": "4",
+                        "end": "6"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "6"
+                            ],
+                            "Spegesild"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "productName"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Order",
+                        "shipCity": "Seattle",
+                        "shipVia": 1,
+                        "customerID": "WHITC",
+                        "shipName": "White Clover Markets",
+                        "shipPostalCode": 98124,
+                        "shipCountry": "USA",
+                        "shipAddress": "1029-12th Ave. S."
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Product",
+                        "unitPrice": 700,
+                        "supplierID": 21,
+                        "productID": 46,
+                        "productName": "Spegesild"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Category",
+                        "categoryName": "Seafood",
+                        "categoryID": 10
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "ORDERS",
+                        "element_id": "0",
+                        "start": "0",
+                        "end": "1"
+                    },
+                    {
+                        "label": "PART_OF",
+                        "element_id": "1",
+                        "start": "1",
+                        "end": "2"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "1"
+                            ],
+                            "Spegesild"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "productName"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,230 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Me",
+                        "following": 10124,
+                        "follwers": 34507,
+                        "name": "Neo4j"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "User",
+                        "following": 51280,
+                        "name": "Right Relevance",
+                        "follwers": 51280,
+                        "userID": 2
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "User",
+                        "following": 1124,
+                        "follwers": 1124,
+                        "name": "Philip Rathle",
+                        "userID": 1385
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "User",
+                        "following": 175,
+                        "name": "Boston Scientific",
+                        "follwers": 34407,
+                        "userID": 4063
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "User",
+                        "following": 1568,
+                        "follwers": 1568,
+                        "name": "NetScience",
+                        "userID": 37
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "User",
+                        "following": 47,
+                        "follwers": 47,
+                        "name": "Stuart Laurie",
+                        "userID": 63
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "FOLLOWS",
+                        "element_id": "0",
+                        "start": "0",
+                        "end": "1"
+                    },
+                    {
+                        "label": "INTERACT_WITH",
+                        "element_id": "1",
+                        "start": "0",
+                        "end": "2"
+                    },
+                    {
+                        "label": "AMPLIFIES",
+                        "element_id": "2",
+                        "start": "0",
+                        "end": "3"
+                    },
+                    {
+                        "label": "RT_MENTIONS",
+                        "element_id": "3",
+                        "start": "0",
+                        "end": "4"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [],
+                "edges": []
+            },
+            "mapping3": [{
+                    "operator": "max",
+                    "property": "follwers",
+                    "data": ["n2"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "min",
+                    "property": "follwers",
+                    "data": ["n2"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "avg",
+                    "property": "follwers",
+                    "data": ["n2"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "count",
+                    "property": "follwers",
+                    "data": ["n2"],
+                    "lhs": {},
+                    "rhs": {}
+                }],
+            "correspondence": [
+                ["exp0", "exp1", "exp2", "exp3"]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Me",
+                        "following": 10124,
+                        "follwers": 34507,
+                        "name": "Neo4j"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "User",
+                        "following": 51280,
+                        "name": "Right Relevance",
+                        "follwers": 51280
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "User",
+                        "following": 1124,
+                        "follwers": 1124,
+                        "name": "Philip Rathle"
+                    },
+                    {
+                        "element_id": "8",
+                        "label": "User",
+                        "following": 175,
+                        "name": "Boston Scientific",
+                        "follwers": 34407
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "User",
+                        "following": 1568,
+                        "follwers": 1568,
+                        "name": "NetScience"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "FOLLOWS",
+                        "element_id": "0",
+                        "start": "0",
+                        "end": "1"
+                    },
+                    {
+                        "label": "INTERACT_WITH",
+                        "element_id": "1",
+                        "start": "0",
+                        "end": "2"
+                    },
+                    {
+                        "label": "AMPLIFIES",
+                        "element_id": "6",
+                        "start": "0",
+                        "end": "8"
+                    },
+                    {
+                        "label": "RT_MENTIONS",
+                        "element_id": "7",
+                        "start": "0",
+                        "end": "9"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [],
+                "edges": []
+            },
+            "mapping3": [
+                {
+                    "operator": "max",
+                    "property": "follwers",
+                    "data": ["n2"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "min",
+                    "property": "follwers",
+                    "data": ["n2"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "avg",
+                    "property": "follwers",
+                    "data": ["n2"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "count",
+                    "property": "follwers",
+                    "data": ["n2"],
+                    "lhs": {},
+                    "rhs": {}
+                }
+            ],
+            "correspondence": [
+                ["exp0", "exp1", "exp2", "exp3"]
+            ]
+        }
+    ]
+}

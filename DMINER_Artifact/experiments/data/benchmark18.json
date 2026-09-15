@@ -1,0 +1,87 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "1",
+                        "label": "Node",
+                        "worked": 70,
+                        "retired": 6
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Node",
+                        "worked": 5,
+                        "retired": 0
+                    }
+                ],
+                "edges": []
+            },
+            "mapping1": {
+                "nodes": [],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [],
+                "edges": []
+            },
+            "mapping3": [
+                {
+                    "operator": "+",
+                    "property": "",
+                    "data": [],
+                    "lhs": {
+                        "operator": "empty",
+                        "property": "worked",
+                        "data": [
+                            "n1"
+                        ],
+                        "lhs": {},
+                        "rhs": {}
+                    },
+                    "rhs": {
+                        "operator": "empty",
+                        "property": "retired",
+                        "data": [
+                            "n1"
+                        ],
+                        "lhs": {},
+                        "rhs": {}
+                    }
+                },
+                {
+                    "operator": "+",
+                    "property": "",
+                    "data": [],
+                    "lhs": {
+                        "operator": "empty",
+                        "property": "worked",
+                        "data": [
+                            "n2"
+                        ],
+                        "lhs": {},
+                        "rhs": {}
+                    },
+                    "rhs": {
+                        "operator": "empty",
+                        "property": "retired",
+                        "data": [
+                            "n2"
+                        ],
+                        "lhs": {},
+                        "rhs": {}
+                    }
+                }
+            ],
+            "correspondence": [
+                [
+                    "exp0"
+                ],
+                [
+                    "exp1"
+                ]
+            ]
+        }
+    ]
+}

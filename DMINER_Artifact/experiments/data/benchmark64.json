@@ -1,0 +1,603 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "9",
+                        "label": "Me",
+                        "following": 10124,
+                        "follwers": 34507,
+                        "name": "Neo4j"
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "User",
+                        "following": 51280,
+                        "name": "Right Relevance",
+                        "follwers": 51280,
+                        "userID": 2
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "Tweet",
+                        "favorites": 1,
+                        "created_at": "2021-03-15T18:14:01Z",
+                        "text": "Javaland 2021 – Was macht SRE eigentlich bei Neo4j Aura"
+                    },
+                    {
+                        "element_id": "12",
+                        "label": "Tweet",
+                        "favorites": 2,
+                        "created_at": "2021-03-15T17:07:01Z",
+                        "text": "Discover how RLE International uses Neo4j in engineering for the automotive industry"
+                    },
+                    {
+                        "element_id": "13",
+                        "label": "Link",
+                        "url": "https://twitter.com/i/web/status/1371325418947612679"
+                    },
+                    {
+                        "element_id": "14",
+                        "label": "Hashtag",
+                        "name": "auraenterprise"
+                    },
+                    {
+                        "element_id": "15",
+                        "label": "Link",
+                        "url": "https://twitter.com/i/web/status/1371476477267574785"
+                    },
+                    {
+                        "element_id": "16",
+                        "label": "Hashtag",
+                        "name": "dsi"
+                    },
+                    {
+                        "element_id": "17",
+                        "label": "Source",
+                        "name": "Buffer"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "FOLLOWS",
+                        "element_id": "9",
+                        "start": "9",
+                        "end": "10"
+                    },
+                    {
+                        "label": "POSTS",
+                        "element_id": "10",
+                        "start": "10",
+                        "end": "11"
+                    },
+                    {
+                        "label": "TAGS",
+                        "element_id": "11",
+                        "start": "11",
+                        "end": "14"
+                    },
+                    {
+                        "label": "CONTAINS",
+                        "element_id": "12",
+                        "start": "11",
+                        "end": "13"
+                    },
+                    {
+                        "label": "USING",
+                        "element_id": "13",
+                        "start": "11",
+                        "end": "17"
+                    },
+                    {
+                        "label": "POSTS",
+                        "element_id": "14",
+                        "start": "10",
+                        "end": "12"
+                    },
+                    {
+                        "label": "TAGS",
+                        "element_id": "15",
+                        "start": "12",
+                        "end": "16"
+                    },
+                    {
+                        "label": "CONTAINS",
+                        "element_id": "16",
+                        "start": "12",
+                        "end": "15"
+                    },
+                    {
+                        "label": "USING",
+                        "element_id": "17",
+                        "start": "12",
+                        "end": "17"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "9"
+                            ],
+                            "CompleteNode9"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "11"
+                            ],
+                            "CompleteNode11"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "14"
+                            ],
+                            "CompleteNode14"
+                        ]
+                    },
+                    {
+                        "output": 3,
+                        "input": [
+                            [
+                                "13"
+                            ],
+                            "CompleteNode13"
+                        ]
+                    },
+                    {
+                        "output": 4,
+                        "input": [
+                            [
+                                "17"
+                            ],
+                            "CompleteNode17"
+                        ]
+                    },
+                    {
+                        "output": 5,
+                        "input": [
+                            [
+                                "9"
+                            ],
+                            "CompleteNode9"
+                        ]
+                    },
+                    {
+                        "output": 6,
+                        "input": [
+                            [
+                                "12"
+                            ],
+                            "CompleteNode12"
+                        ]
+                    },
+                    {
+                        "output": 7,
+                        "input": [
+                            [
+                                "16"
+                            ],
+                            "CompleteNode16"
+                        ]
+                    },
+                    {
+                        "output": 8,
+                        "input": [
+                            [
+                                "15"
+                            ],
+                            "CompleteNode15"
+                        ]
+                    },
+                    {
+                        "output": 9,
+                        "input": [
+                            [
+                                "17"
+                            ],
+                            "CompleteNode17"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    },
+                    {
+                        "output": 1,
+                        "property": "full"
+                    },
+                    {
+                        "output": 2,
+                        "property": "full"
+                    },
+                    {
+                        "output": 3,
+                        "property": "full"
+                    },
+                    {
+                        "output": 4,
+                        "property": "full"
+                    },
+                    {
+                        "output": 5,
+                        "property": "full"
+                    },
+                    {
+                        "output": 6,
+                        "property": "full"
+                    },
+                    {
+                        "output": 7,
+                        "property": "full"
+                    },
+                    {
+                        "output": 8,
+                        "property": "full"
+                    },
+                    {
+                        "output": 9,
+                        "property": "full"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "n1",
+                    "n2",
+                    "n3",
+                    "n4"
+                ],
+                [
+                    "n5",
+                    "n6",
+                    "n7",
+                    "n8",
+                    "n9"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Me",
+                        "following": 10124,
+                        "follwers": 34507,
+                        "name": "Neo4j"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "User",
+                        "following": 51280,
+                        "name": "Right Relevance",
+                        "follwers": 51280,
+                        "userID": 2
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Tweet",
+                        "favorites": 1,
+                        "created_at": "2021-03-15T18:14:01Z",
+                        "text": "Javaland 2021 – Was macht SRE eigentlich bei Neo4j Aura"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "Link",
+                        "url": "url: https://twitter.com/i/web/status/1371325418947612679"
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "Hashtag",
+                        "name": "auraenterprise"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Hashtag",
+                        "name": "dsi"
+                    },
+                    {
+                        "element_id": "6",
+                        "label": "Hashtag",
+                        "name": "cloud"
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "Source",
+                        "name": "Buffer"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "FOLLOWS",
+                        "element_id": "0",
+                        "start": "0",
+                        "end": "1"
+                    },
+                    {
+                        "label": "POSTS",
+                        "element_id": "1",
+                        "start": "1",
+                        "end": "2"
+                    },
+                    {
+                        "label": "TAGS",
+                        "element_id": "2",
+                        "start": "2",
+                        "end": "4"
+                    },
+                    {
+                        "label": "CONTAINS",
+                        "element_id": "3",
+                        "start": "2",
+                        "end": "3"
+                    },
+                    {
+                        "label": "TAGS",
+                        "element_id": "4",
+                        "start": "2",
+                        "end": "5"
+                    },
+                    {
+                        "label": "TAGS",
+                        "element_id": "5",
+                        "start": "2",
+                        "end": "6"
+                    },
+                    {
+                        "label": "USING",
+                        "element_id": "6",
+                        "start": "2",
+                        "end": "7"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "CompleteNode0"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "2"
+                            ],
+                            "CompleteNode2"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "4"
+                            ],
+                            "CompleteNode4"
+                        ]
+                    },
+                    {
+                        "output": 3,
+                        "input": [
+                            [
+                                "3"
+                            ],
+                            "CompleteNode3"
+                        ]
+                    },
+                    {
+                        "output": 4,
+                        "input": [
+                            [
+                                "7"
+                            ],
+                            "CompleteNode7"
+                        ]
+                    },
+                    {
+                        "output": 5,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "CompleteNode0"
+                        ]
+                    },
+                    {
+                        "output": 6,
+                        "input": [
+                            [
+                                "2"
+                            ],
+                            "CompleteNode2"
+                        ]
+                    },
+                    {
+                        "output": 7,
+                        "input": [
+                            [
+                                "5"
+                            ],
+                            "CompleteNode5"
+                        ]
+                    },
+                    {
+                        "output": 8,
+                        "input": [
+                            [
+                                "3"
+                            ],
+                            "CompleteNode3"
+                        ]
+                    },
+                    {
+                        "output": 9,
+                        "input": [
+                            [
+                                "7"
+                            ],
+                            "CompleteNode7"
+                        ]
+                    },
+                    {
+                        "output": 10,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "CompleteNode0"
+                        ]
+                    },
+                    {
+                        "output": 11,
+                        "input": [
+                            [
+                                "2"
+                            ],
+                            "CompleteNode2"
+                        ]
+                    },
+                    {
+                        "output": 12,
+                        "input": [
+                            [
+                                "6"
+                            ],
+                            "CompleteNode6"
+                        ]
+                    },
+                    {
+                        "output": 13,
+                        "input": [
+                            [
+                                "3"
+                            ],
+                            "CompleteNode3"
+                        ]
+                    },
+                    {
+                        "output": 14,
+                        "input": [
+                            [
+                                "7"
+                            ],
+                            "CompleteNode7"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    },
+                    {
+                        "output": 1,
+                        "property": "full"
+                    },
+                    {
+                        "output": 2,
+                        "property": "full"
+                    },
+                    {
+                        "output": 3,
+                        "property": "full"
+                    },
+                    {
+                        "output": 4,
+                        "property": "full"
+                    },
+                    {
+                        "output": 5,
+                        "property": "full"
+                    },
+                    {
+                        "output": 6,
+                        "property": "full"
+                    },
+                    {
+                        "output": 7,
+                        "property": "full"
+                    },
+                    {
+                        "output": 8,
+                        "property": "full"
+                    },
+                    {
+                        "output": 9,
+                        "property": "full"
+                    },
+                    {
+                        "output": 10,
+                        "property": "full"
+                    },
+                    {
+                        "output": 11,
+                        "property": "full"
+                    },
+                    {
+                        "output": 12,
+                        "property": "full"
+                    },
+                    {
+                        "output": 13,
+                        "property": "full"
+                    },
+                    {
+                        "output": 14,
+                        "property": "full"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "n1",
+                    "n2",
+                    "n3",
+                    "n4"
+                ],
+                [
+                    "n5",
+                    "n6",
+                    "n7",
+                    "n8",
+                    "n9"
+                ],
+                [
+                    "n10",
+                    "n11",
+                    "n12",
+                    "n13",
+                    "n14"
+                ]
+            ]
+        }
+    ]
+}

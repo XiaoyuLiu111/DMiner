@@ -1,0 +1,376 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "User",
+                        "uid": "999"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Review",
+                        "category": "INSTA"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Post",
+                        "location": "Seattle"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "post",
+                        "element_id": "0",
+                        "start": "2",
+                        "end": "0"
+                    },
+                    {
+                        "label": "review",
+                        "element_id": "1",
+                        "start": "2",
+                        "end": "1",
+                        "score": 6
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "2"
+                            ],
+                            "Seattle"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "location"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "6",
+                        "label": "User",
+                        "uid": "132"
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "Review",
+                        "category": "INSTA"
+                    },
+                    {
+                        "element_id": "8",
+                        "label": "User",
+                        "uid": "999"
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "Review",
+                        "category": "INSTA"
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "Post",
+                        "location": "Seattle"
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "Post",
+                        "location": "Seattle"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "post",
+                        "element_id": "4",
+                        "start": "10",
+                        "end": "6"
+                    },
+                    {
+                        "label": "review",
+                        "element_id": "5",
+                        "start": "10",
+                        "end": "7",
+                        "score": 8
+                    },
+                    {
+                        "label": "post",
+                        "element_id": "6",
+                        "start": "11",
+                        "end": "8"
+                    },
+                    {
+                        "label": "review",
+                        "element_id": "7",
+                        "start": "11",
+                        "end": "9",
+                        "score": 8
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "11"
+                            ],
+                            "Seattle"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "location"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "User",
+                        "uid": "156"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Review",
+                        "category": "FB"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "User",
+                        "uid": "999"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "Review",
+                        "category": "FB"
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "Post",
+                        "location": "Seattle"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Post",
+                        "location": "Seattle"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "post",
+                        "element_id": "0",
+                        "start": "4",
+                        "end": "0"
+                    },
+                    {
+                        "label": "review",
+                        "element_id": "1",
+                        "start": "4",
+                        "end": "1",
+                        "score": 4
+                    },
+                    {
+                        "label": "post",
+                        "element_id": "2",
+                        "start": "5",
+                        "end": "2"
+                    },
+                    {
+                        "label": "review",
+                        "element_id": "3",
+                        "start": "5",
+                        "end": "3",
+                        "score": 5
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "5"
+                            ],
+                            "Seattle"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "location"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "9",
+                        "label": "User",
+                        "uid": "999"
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "User",
+                        "uid": "999"
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "User",
+                        "uid": "999"
+                    },
+                    {
+                        "element_id": "12",
+                        "label": "Review",
+                        "category": "FB"
+                    },
+                    {
+                        "element_id": "13",
+                        "label": "Review",
+                        "category": "INSTA"
+                    },
+                    {
+                        "element_id": "14",
+                        "label": "Review",
+                        "category": "X"
+                    },
+                    {
+                        "element_id": "15",
+                        "label": "Post",
+                        "location": "Seattle"
+                    },
+                    {
+                        "element_id": "16",
+                        "label": "Post",
+                        "location": "Seattle"
+                    },
+                    {
+                        "element_id": "17",
+                        "label": "Post",
+                        "location": "Seattle"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "post",
+                        "element_id": "6",
+                        "start": "15",
+                        "end": "9"
+                    },
+                    {
+                        "label": "review",
+                        "element_id": "7",
+                        "start": "15",
+                        "end": "12",
+                        "score": 4
+                    },
+                    {
+                        "label": "post",
+                        "element_id": "8",
+                        "start": "16",
+                        "end": "10"
+                    },
+                    {
+                        "label": "review",
+                        "element_id": "9",
+                        "start": "16",
+                        "end": "14",
+                        "score": 6
+                    },
+                    {
+                        "label": "post",
+                        "element_id": "10",
+                        "start": "17",
+                        "end": "11"
+                    },
+                    {
+                        "label": "review",
+                        "element_id": "11",
+                        "start": "17",
+                        "end": "13",
+                        "score": 5
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "15"
+                            ],
+                            "Seattle"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "location"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ]
+            ]
+        }
+    ]
+}

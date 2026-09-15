@@ -1,0 +1,501 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "10",
+                        "label": "Movie",
+                        "tagline": "Life is like a box of chocolates",
+                        "title": "Forrest Gump",
+                        "released": 1994
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "Movie",
+                        "tagline": "At the edge of the world, his journey begins",
+                        "title": "Cast Away",
+                        "released": 2000
+                    },
+                    {
+                        "element_id": "12",
+                        "label": "Movie",
+                        "tagline": "The adventure takes off!",
+                        "title": "Toy Story",
+                        "released": 1995
+                    },
+                    {
+                        "element_id": "13",
+                        "label": "Movie",
+                        "tagline": "The mission is a man",
+                        "title": "Saving Private Ryan",
+                        "released": 1998
+                    },
+                    {
+                        "element_id": "14",
+                        "label": "Movie",
+                        "tagline": "Miracles happen",
+                        "title": "The Green Mile",
+                        "released": 1999
+                    },
+                    {
+                        "element_id": "15",
+                        "label": "Person",
+                        "born": 1956,
+                        "name": "Tom Hanks"
+                    },
+                    {
+                        "element_id": "16",
+                        "label": "Person",
+                        "born": 1951,
+                        "name": "Robert Zemeckis"
+                    },
+                    {
+                        "element_id": "17",
+                        "label": "Person",
+                        "born": 1961,
+                        "name": "Bonnie Lynn Hunt"
+                    },
+                    {
+                        "element_id": "18",
+                        "label": "Person",
+                        "born": 1966,
+                        "name": "Robin Wright"
+                    },
+                    {
+                        "element_id": "19",
+                        "label": "Person",
+                        "born": 1952,
+                        "name": "Robert Zemeckis"
+                    },
+                    {
+                        "element_id": "22",
+                        "label": "Person",
+                        "born": 1946,
+                        "name": "Steven Spielberg"
+                    },
+                    {
+                        "element_id": "23",
+                        "label": "Person",
+                        "born": 1968,
+                        "name": "Edward Burns"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "4",
+                        "start": "15",
+                        "end": "10",
+                        "roles": "Forrest Gump"
+                    },
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "5",
+                        "start": "18",
+                        "end": "10",
+                        "roles": "Jenny Curran"
+                    },
+                    {
+                        "label": "DIRECTED",
+                        "element_id": "6",
+                        "start": "19",
+                        "end": "10"
+                    },
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "7",
+                        "start": "15",
+                        "end": "11",
+                        "roles": "Chuck Noland"
+                    },
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "13",
+                        "start": "15",
+                        "end": "14",
+                        "roles": "Paul Edgecomb"
+                    },
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "14",
+                        "start": "17",
+                        "end": "14",
+                        "roles": "Jan Edgecomb"
+                    },
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "15",
+                        "start": "15",
+                        "end": "13",
+                        "roles": "John H. Miller"
+                    },
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "16",
+                        "start": "23",
+                        "end": "13",
+                        "roles": "Richard Reiben"
+                    },
+                    {
+                        "label": "DIRECTED",
+                        "element_id": "17",
+                        "start": "22",
+                        "end": "13"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "15"
+                            ],
+                            "CompleteNode15"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "13"
+                            ],
+                            "CompleteNode13"
+                        ]
+                    },
+                    {
+                        "output": 3,
+                        "input": [
+                            [
+                                "15"
+                            ],
+                            "CompleteNode15"
+                        ]
+                    },
+                    {
+                        "output": 5,
+                        "input": [
+                            [
+                                "14"
+                            ],
+                            "CompleteNode14"
+                        ]
+                    },
+                    {
+                        "output": 6,
+                        "input": [
+                            [
+                                "15"
+                            ],
+                            "CompleteNode15"
+                        ]
+                    },
+                    {
+                        "output": 8,
+                        "input": [
+                            [
+                                "11"
+                            ],
+                            "CompleteNode11"
+                        ]
+                    },
+                    {
+                        "output": 9,
+                        "input": [
+                            [
+                                "15"
+                            ],
+                            "CompleteNode15"
+                        ]
+                    },
+                    {
+                        "output": 11,
+                        "input": [
+                            [
+                                "10"
+                            ],
+                            "CompleteNode10"
+                        ]
+                    }
+                ],
+                "edges": [
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "15"
+                            ],
+                            "CompleteEdge15"
+                        ]
+                    },
+                    {
+                        "output": 4,
+                        "input": [
+                            [
+                                "13"
+                            ],
+                            "CompleteEdge13"
+                        ]
+                    },
+                    {
+                        "output": 7,
+                        "input": [
+                            [
+                                "7"
+                            ],
+                            "CompleteEdge7"
+                        ]
+                    },
+                    {
+                        "output": 10,
+                        "input": [
+                            [
+                                "4"
+                            ],
+                            "CompleteEdge4"
+                        ]
+                    }
+                ]
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    },
+                    {
+                        "output": 2,
+                        "property": "full"
+                    },
+                    {
+                        "output": 3,
+                        "property": "full"
+                    },
+                    {
+                        "output": 5,
+                        "property": "full"
+                    },
+                    {
+                        "output": 6,
+                        "property": "full"
+                    },
+                    {
+                        "output": 8,
+                        "property": "full"
+                    },
+                    {
+                        "output": 9,
+                        "property": "full"
+                    },
+                    {
+                        "output": 11,
+                        "property": "full"
+                    }
+                ],
+                "edges": [
+                    {
+                        "output": 1,
+                        "property": "full"
+                    },
+                    {
+                        "output": 4,
+                        "property": "full"
+                    },
+                    {
+                        "output": 7,
+                        "property": "full"
+                    },
+                    {
+                        "output": 10,
+                        "property": "full"
+                    }
+                ]
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "e1",
+                    "n2"
+                ],
+                [
+                    "n3",
+                    "e4",
+                    "n5"
+                ],
+                [
+                    "n6",
+                    "e7",
+                    "n8"
+                ],
+                [
+                    "n9",
+                    "e10",
+                    "n11"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "10",
+                        "label": "Movie",
+                        "tagline": "Life is like a box of chocolates",
+                        "title": "Forrest Gump",
+                        "released": 1994
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "Movie",
+                        "tagline": "At the edge of the world, his journey begins",
+                        "title": "Cast Away",
+                        "released": 2000
+                    },
+                    {
+                        "element_id": "12",
+                        "label": "Movie",
+                        "tagline": "The adventure takes off!",
+                        "title": "Toy Story",
+                        "released": 1995
+                    },
+                    {
+                        "element_id": "13",
+                        "label": "Movie",
+                        "tagline": "Out of the darkness... comes the Knight",
+                        "title": "The Dark Knight",
+                        "released": 2008
+                    },
+                    {
+                        "element_id": "14",
+                        "label": "Movie",
+                        "tagline": "Miracles happen",
+                        "title": "The Green Mile",
+                        "released": 1999
+                    },
+                    {
+                        "element_id": "15",
+                        "label": "Person",
+                        "born": 1956,
+                        "name": "Tom Hanks"
+                    },
+                    {
+                        "element_id": "16",
+                        "label": "Person",
+                        "born": 1951,
+                        "name": "Robert Zemeckis"
+                    },
+                    {
+                        "element_id": "17",
+                        "label": "Person",
+                        "born": 1956,
+                        "name": "Eric Roberts"
+                    },
+                    {
+                        "element_id": "18",
+                        "label": "Person",
+                        "born": 1953,
+                        "name": "Tim Allen"
+                    },
+                    {
+                        "element_id": "19",
+                        "label": "Person",
+                        "born": 1957,
+                        "name": "Michael Clarke Duncan"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "4",
+                        "start": "15",
+                        "end": "10",
+                        "roles": "Forrest Gump"
+                    },
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "5",
+                        "start": "17",
+                        "end": "13",
+                        "roles": "Sal Maroni"
+                    },
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "6",
+                        "start": "18",
+                        "end": "12",
+                        "roles": "Buzz Lightyear"
+                    },
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "7",
+                        "start": "19",
+                        "end": "14",
+                        "roles": "John Coffey"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "15"
+                            ],
+                            "CompleteNode15"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "10"
+                            ],
+                            "CompleteNode10"
+                        ]
+                    }
+                ],
+                "edges": [
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "4"
+                            ],
+                            "CompleteEdge4"
+                        ]
+                    }
+                ]
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    },
+                    {
+                        "output": 2,
+                        "property": "full"
+                    }
+                ],
+                "edges": [
+                    {
+                        "output": 1,
+                        "property": "full"
+                    }
+                ]
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "e1",
+                    "n2"
+                ]
+            ]
+        }
+    ]
+}

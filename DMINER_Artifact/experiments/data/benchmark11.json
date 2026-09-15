@@ -1,0 +1,287 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "6",
+                        "label": "Item",
+                        "price": 1500.0,
+                        "name": "Computer",
+                        "id": 1
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "Item",
+                        "price": 3500.0,
+                        "name": "Video_Game",
+                        "id": 2
+                    },
+                    {
+                        "element_id": "8",
+                        "label": "Item",
+                        "price": 50.0,
+                        "name": "Book1",
+                        "id": 3
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "Item",
+                        "price": 20.0,
+                        "name": "Book2",
+                        "id": 4
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "Store",
+                        "name": "Store",
+                        "location": "Street R",
+                        "id": 5
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "Store",
+                        "name": "BookStore",
+                        "location": "Street Z",
+                        "id": 6
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "Sells",
+                        "element_id": "4",
+                        "start": "10",
+                        "end": "6"
+                    },
+                    {
+                        "label": "Sells",
+                        "element_id": "5",
+                        "start": "10",
+                        "end": "7"
+                    },
+                    {
+                        "label": "Sells",
+                        "element_id": "6",
+                        "start": "11",
+                        "end": "8"
+                    },
+                    {
+                        "label": "Sells",
+                        "element_id": "7",
+                        "start": "11",
+                        "end": "9"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "input": [["10"], "Store"],
+                        "output": 0
+                    },
+                    {
+                        "input": [["11"], "BookStore"],
+                        "output": 1
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "name"
+                    },
+                    {
+                        "output": 1,
+                        "property": "name"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [
+                {
+                    "operator": "sum",
+                    "property": "price",
+                    "data": ["n6", "n7"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "sum",
+                    "property": "price",
+                    "data": ["n8", "n9"],
+                    "lhs": {},
+                    "rhs": {}
+                }
+            ],
+            "correspondence": [["n0", "exp0"], ["n1", "exp1"]]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "9",
+                        "label": "Store",
+                        "name": "Store A",
+                        "location": "Downtown",
+                        "id": 1
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "Store",
+                        "name": "Store B",
+                        "location": "Midtown",
+                        "id": 2
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "Store",
+                        "name": "Store C",
+                        "location": "Uptown",
+                        "id": 3
+                    },
+                    {
+                        "element_id": "12",
+                        "label": "Item",
+                        "price": 10.99,
+                        "name": "Item X",
+                        "id": 101
+                    },
+                    {
+                        "element_id": "13",
+                        "label": "Item",
+                        "price": 15.49,
+                        "name": "Item Y",
+                        "id": 102
+                    },
+                    {
+                        "element_id": "14",
+                        "label": "Item",
+                        "price": 7.25,
+                        "name": "Item Z",
+                        "id": 103
+                    },
+                    {
+                        "element_id": "15",
+                        "label": "Item",
+                        "price": 5.99,
+                        "name": "Item W",
+                        "id": 104
+                    },
+                    {
+                        "element_id": "16",
+                        "label": "Item",
+                        "price": 20.0,
+                        "name": "Item V",
+                        "id": 105
+                    },
+                    {
+                        "element_id": "17",
+                        "label": "Item",
+                        "price": 13.75,
+                        "name": "Item U",
+                        "id": 106
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "Sells",
+                        "element_id": "7",
+                        "start": "9",
+                        "end": "12"
+                    },
+                    {
+                        "label": "Sells",
+                        "element_id": "8",
+                        "start": "10",
+                        "end": "13"
+                    },
+                    {
+                        "label": "Sells",
+                        "element_id": "9",
+                        "start": "10",
+                        "end": "15"
+                    },
+                    {
+                        "label": "Sells",
+                        "element_id": "10",
+                        "start": "10",
+                        "end": "16"
+                    },
+                    {
+                        "label": "Sells",
+                        "element_id": "11",
+                        "start": "11",
+                        "end": "14"
+                    },
+                    {
+                        "label": "Sells",
+                        "element_id": "12",
+                        "start": "11",
+                        "end": "17"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "input": [["9"], "Store A"],
+                        "output": 0
+                    },
+                    {
+                        "input": [["10"], "Store B"],
+                        "output": 1
+                    },
+                    {
+                        "input": [["11"], "Store C"],
+                        "output": 2
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "name"
+
+                    },
+                    {
+                        "output": 1,
+                        "property": "name"
+                    },
+                    {
+                        "output": 2,
+                        "property": "name"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [
+                {
+                    "operator": "sum",
+                    "property": "price",
+                    "data": ["n12"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "sum",
+                    "property": "price",
+                    "data": ["n13", "n15", "n16"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "sum",
+                    "property": "price",
+                    "data": ["n14", "n17"],
+                    "lhs": {},
+                    "rhs": {}
+                }
+            ],
+            "correspondence": [["n0", "exp0"], ["n1", "exp1"], ["n2", "exp2"]]
+        }
+    ]
+}

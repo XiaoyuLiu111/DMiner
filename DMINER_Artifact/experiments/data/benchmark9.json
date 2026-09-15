@@ -1,0 +1,213 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Person",
+                        "name": "Brother"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Child",
+                        "name": "Son"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Child",
+                        "name": "Daughter"
+                    },
+                    {
+                        "element_id": "8",
+                        "label": "Child",
+                        "name": "Daughter"
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "Child",
+                        "name": "Daughter"
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "Parent",
+                        "name": "Jessica"
+                    },
+                    {
+                        "element_id": "16",
+                        "label": "Parent",
+                        "name": "Bob"
+                    },
+                    {
+                        "element_id": "17",
+                        "label": "Parent",
+                        "name": "Alice"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "MARRIED_TO",
+                        "element_id": "12",
+                        "start": "16",
+                        "end": "17"
+                    },
+                    {
+                        "label": "HAS",
+                        "element_id": "13",
+                        "start": "17",
+                        "end": "8"
+                    },
+                    {
+                        "label": "HAS",
+                        "element_id": "14",
+                        "start": "16",
+                        "end": "1"
+                    },
+                    {
+                        "label": "HAS",
+                        "element_id": "15",
+                        "start": "16",
+                        "end": "2"
+                    },
+                    {
+                        "label": "HAS",
+                        "element_id": "16",
+                        "start": "10",
+                        "end": "9"
+                    },
+                    {
+                        "label": "BROTHER_OF",
+                        "element_id": "17",
+                        "start": "16",
+                        "end": "0"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "1"
+                            ],
+                            "Son"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "2"
+                            ],
+                            "Daughter"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "name"
+                    },
+                    {
+                        "output": 1,
+                        "property": "name"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ],
+                [
+                    "n1"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "5",
+                        "label": "Parent",
+                        "name": "Bob"
+                    },
+                    {
+                        "element_id": "6",
+                        "label": "Parent",
+                        "name": "Susan"
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "Child",
+                        "name": "Son"
+                    },
+                    {
+                        "element_id": "8",
+                        "label": "Child",
+                        "name": "Daughter"
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "Child",
+                        "name": "Daughter"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "HAS",
+                        "element_id": "3",
+                        "start": "5",
+                        "end": "8"
+                    },
+                    {
+                        "label": "HAS",
+                        "element_id": "4",
+                        "start": "6",
+                        "end": "9"
+                    },
+                    {
+                        "label": "HAS",
+                        "element_id": "5",
+                        "start": "6",
+                        "end": "7"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "8"
+                            ],
+                            "Daughter"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "name"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ]
+            ]
+        }
+    ]
+}

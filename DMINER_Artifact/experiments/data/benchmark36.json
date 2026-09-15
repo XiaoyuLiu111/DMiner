@@ -1,0 +1,170 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "6",
+                        "label": "Person"
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "Person"
+                    },
+                    {
+                        "element_id": "8",
+                        "label": "Person"
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "Person"
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "Person"
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "Person"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "KNOWS",
+                        "element_id": "21",
+                        "start": "6",
+                        "end": "7",
+                        "duration": 6
+                    },
+                    {
+                        "label": "KNOWS",
+                        "element_id": "22",
+                        "start": "6",
+                        "end": "10",
+                        "duration": 10
+                    },
+                    {
+                        "label": "KNOWS",
+                        "element_id": "23",
+                        "start": "6",
+                        "end": "11",
+                        "duration": 1.2
+                    },
+                    {
+                        "label": "KNOWS",
+                        "element_id": "24",
+                        "start": "8",
+                        "end": "9",
+                        "duration": 26
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [],
+                "edges": []
+            },
+            "mapping3": [
+                {
+                    "operator": "sum",
+                    "property": "duration",
+                    "data": ["e21", "e22", "e23", "e24"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "avg",
+                    "property": "duration",
+                    "data": ["e21", "e22", "e23", "e24"],
+                    "lhs": {},
+                    "rhs": {}
+                }
+            ],
+            "correspondence": [["exp0", "exp1"]]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Person"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Person"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Person"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "Person"
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "Person"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "KNOWS",
+                        "element_id": "8",
+                        "start": "0",
+                        "end": "1",
+                        "duration": 5
+                    },
+                    {
+                        "label": "KNOWS",
+                        "element_id": "9",
+                        "start": "1",
+                        "end": "2",
+                        "duration": 3
+                    },
+                    {
+                        "label": "KNOWS",
+                        "element_id": "10",
+                        "start": "0",
+                        "end": "2",
+                        "duration": 10
+                    },
+                    {
+                        "label": "KNOWS",
+                        "element_id": "11",
+                        "start": "3",
+                        "end": "4",
+                        "duration": 2
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [],
+                "edges": []
+            },
+            "mapping3": [
+                {
+                    "operator": "sum",
+                    "property": "duration",
+                    "data": ["e8", "e9", "e10", "e11"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "avg",
+                    "property": "duration",
+                    "data": ["e8", "e9", "e10", "e11"],
+                    "lhs": {},
+                    "rhs": {}
+                }
+            ],
+            "correspondence": [["exp0", "exp1"]]
+        }
+    ]
+}

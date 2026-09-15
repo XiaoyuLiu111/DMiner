@@ -1,0 +1,70 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "6",
+                        "label": "Movie",
+                        "tagline": "At the edge of the world, his journey begins",
+                        "title": "Cast Away",
+                        "released": 2000
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "Movie",
+                        "tagline": "This Holiday Season… Believe",
+                        "title": "The Polar Express",
+                        "released": 2004
+                    }
+                ],
+                "edges": []
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "6"
+                            ],
+                            "Cast Away"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "7"
+                            ],
+                            "The Polar Express"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "title"
+                    },
+                    {
+                        "output": 1,
+                        "property": "title"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ],
+                [
+                    "n1"
+                ]
+            ]
+        }
+    ]
+}

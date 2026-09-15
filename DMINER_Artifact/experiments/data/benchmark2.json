@@ -1,0 +1,332 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "1",
+                        "label": "Person",
+                        "name": "P01"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Person",
+                        "name": "P01"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "Person",
+                        "name": "P01"
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "Person",
+                        "name": "P01"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "MY_RELATION",
+                        "element_id": "2",
+                        "start": "1",
+                        "end": "2",
+                        "maximum": 23,
+                        "minimum": 20
+                    },
+                    {
+                        "label": "MY_RELATION",
+                        "element_id": "3",
+                        "start": "3",
+                        "end": "7",
+                        "maximum": 18,
+                        "minimum": 15
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "1"
+                            ],
+                            "CompleteNode1"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "2"
+                            ],
+                            "CompleteNode2"
+                        ]
+                    }
+                ],
+                "edges": [
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "2"
+                            ],
+                            "CompleteEdge2"
+                        ]
+                    }
+                ]
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    },
+                    {
+                        "output": 2,
+                        "property": "full"
+                    }
+                ],
+                "edges": [
+                    {
+                        "output": 1,
+                        "property": "full"
+                    }
+                ]
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "e1",
+                    "n2"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Person",
+                        "name": "P01"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Person",
+                        "name": "P01"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Person",
+                        "name": "P01"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "Person",
+                        "name": "P01"
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "Person",
+                        "name": "P01"
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "Person",
+                        "name": "P01"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "MY_RELATION",
+                        "element_id": "0",
+                        "start": "0",
+                        "end": "1",
+                        "maximum": 25,
+                        "minimum": 21
+                    },
+                    {
+                        "label": "MY_RELATION",
+                        "element_id": "1",
+                        "start": "1",
+                        "end": "2",
+                        "maximum": 22,
+                        "minimum": 20
+                    },
+                    {
+                        "label": "MY_RELATION",
+                        "element_id": "2",
+                        "start": "2",
+                        "end": "3",
+                        "maximum": 25,
+                        "minimum": 22
+                    },
+                    {
+                        "label": "MY_RELATION",
+                        "element_id": "3",
+                        "start": "3",
+                        "end": "4",
+                        "maximum": 20,
+                        "minimum": 19
+                    },
+                    {
+                        "label": "MY_RELATION",
+                        "element_id": "4",
+                        "start": "4",
+                        "end": "10",
+                        "maximum": 21,
+                        "minimum": 3
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "CompleteNode0"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "1"
+                            ],
+                            "CompleteNode1"
+                        ]
+                    },
+                    {
+                        "output": 3,
+                        "input": [
+                            [
+                                "1"
+                            ],
+                            "CompleteNode1"
+                        ]
+                    },
+                    {
+                        "output": 5,
+                        "input": [
+                            [
+                                "2"
+                            ],
+                            "CompleteNode2"
+                        ]
+                    },
+                    {
+                        "output": 6,
+                        "input": [
+                            [
+                                "4"
+                            ],
+                            "CompleteNode4"
+                        ]
+                    },
+                    {
+                        "output": 8,
+                        "input": [
+                            [
+                                "10"
+                            ],
+                            "CompleteNode10"
+                        ]
+                    }
+                ],
+                "edges": [
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "CompleteEdge0"
+                        ]
+                    },
+                    {
+                        "output": 4,
+                        "input": [
+                            [
+                                "1"
+                            ],
+                            "CompleteEdge1"
+                        ]
+                    },
+                    {
+                        "output": 7,
+                        "input": [
+                            [
+                                "4"
+                            ],
+                            "CompleteEdge4"
+                        ]
+                    }
+                ]
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    },
+                    {
+                        "output": 2,
+                        "property": "full"
+                    },
+                    {
+                        "output": 3,
+                        "property": "full"
+                    },
+                    {
+                        "output": 5,
+                        "property": "full"
+                    },
+                    {
+                        "output": 6,
+                        "property": "full"
+                    },
+                    {
+                        "output": 8,
+                        "property": "full"
+                    }
+                ],
+                "edges": [
+                    {
+                        "output": 1,
+                        "property": "full"
+                    },
+                    {
+                        "output": 4,
+                        "property": "full"
+                    },
+                    {
+                        "output": 7,
+                        "property": "full"
+                    }
+                ]
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "e1",
+                    "n2"
+                ],
+                [
+                    "n3",
+                    "e4",
+                    "n5"
+                ],
+                [
+                    "n6",
+                    "e7",
+                    "n8"
+                ]
+            ]
+        }
+    ]
+}

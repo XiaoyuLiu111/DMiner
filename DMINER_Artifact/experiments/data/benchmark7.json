@@ -1,0 +1,433 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "User",
+                        "name": "Jim Webber"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "User",
+                        "name": "Michael Simons"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "User",
+                        "name": "Michael Hunger"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "User",
+                        "name": "Neo4j"
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "User",
+                        "name": "Lju Lazarevic"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "User",
+                        "name": "Tracy Oguni"
+                    },
+                    {
+                        "element_id": "6",
+                        "label": "User",
+                        "name": "Kunal Gosrani"
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "User",
+                        "name": "Zeljko Predjeskovic"
+                    },
+                    {
+                        "element_id": "8",
+                        "label": "User",
+                        "name": "NASA's Perseverance Mars Rover"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "INTERACTS_WITH",
+                        "element_id": "0",
+                        "start": "3",
+                        "end": "1"
+                    },
+                    {
+                        "label": "INTERACTS_WITH",
+                        "element_id": "1",
+                        "start": "1",
+                        "end": "2"
+                    },
+                    {
+                        "label": "INTERACTS_WITH",
+                        "element_id": "2",
+                        "start": "2",
+                        "end": "5"
+                    },
+                    {
+                        "label": "SIMILAR_TO",
+                        "element_id": "3",
+                        "start": "2",
+                        "end": "4"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "3"
+                            ],
+                            "CompleteNode3"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "1"
+                            ],
+                            "CompleteNode1"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "2"
+                            ],
+                            "CompleteNode2"
+                        ]
+                    },
+                    {
+                        "output": 3,
+                        "input": [
+                            [
+                                "5"
+                            ],
+                            "CompleteNode5"
+                        ]
+                    }
+                ],
+                "edges": [
+                    {
+                        "output": 4,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "CompleteEdge0"
+                        ]
+                    },
+                    {
+                        "output": 5,
+                        "input": [
+                            [
+                                "1"
+                            ],
+                            "CompleteEdge1"
+                        ]
+                    },
+                    {
+                        "output": 6,
+                        "input": [
+                            [
+                                "2"
+                            ],
+                            "CompleteEdge2"
+                        ]
+                    }
+                ]
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    },
+                    {
+                        "output": 1,
+                        "property": "full"
+                    },
+                    {
+                        "output": 2,
+                        "property": "full"
+                    },
+                    {
+                        "output": 3,
+                        "property": "full"
+                    }
+                ],
+                "edges": [
+                    {
+                        "output": 4,
+                        "property": "full"
+                    },
+                    {
+                        "output": 5,
+                        "property": "full"
+                    },
+                    {
+                        "output": 6,
+                        "property": "full"
+                    }
+                ]
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "n1",
+                    "n2",
+                    "n3",
+                    "e4",
+                    "e5",
+                    "e6"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "User",
+                        "name": "Jim Webber"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "User",
+                        "name": "Michael Simons"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "User",
+                        "name": "Michael Hunger"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "User",
+                        "name": "Neo4j"
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "User",
+                        "name": "Lju Lazarevic"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "User",
+                        "name": "Tracy Oguni"
+                    },
+                    {
+                        "element_id": "6",
+                        "label": "User",
+                        "name": "Kunal Gosrani"
+                    },
+                    {
+                        "element_id": "16",
+                        "label": "User",
+                        "name": "Zeljko Predjeskovic"
+                    },
+                    {
+                        "element_id": "17",
+                        "label": "User",
+                        "name": "Kiefer Sutherland"
+                    },
+                    {
+                        "element_id": "18",
+                        "label": "User",
+                        "name": "NASA's Perseverance Mars Rover"
+                    },
+                    {
+                        "element_id": "22",
+                        "label": "User",
+                        "name": "Christopher Guest"
+                    },
+                    {
+                        "element_id": "23",
+                        "label": "User",
+                        "name": "Aaron Sorkin"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "INTERACTS_WITH",
+                        "element_id": "3",
+                        "start": "1",
+                        "end": "2"
+                    },
+                    {
+                        "label": "INTERACTS_WITH",
+                        "element_id": "4",
+                        "start": "2",
+                        "end": "3"
+                    },
+                    {
+                        "label": "INTERACTS_WITH",
+                        "element_id": "5",
+                        "start": "4",
+                        "end": "5"
+                    },
+                    {
+                        "label": "INTERACTS_WITH",
+                        "element_id": "6",
+                        "start": "5",
+                        "end": "6"
+                    },
+                    {
+                        "label": "INTERACTS_WITH",
+                        "element_id": "7",
+                        "start": "5",
+                        "end": "18"
+                    },
+                    {
+                        "label": "INTERACTS_WITH",
+                        "element_id": "8",
+                        "start": "5",
+                        "end": "23"
+                    },
+                    {
+                        "label": "INTERACTS_WITH",
+                        "element_id": "9",
+                        "start": "0",
+                        "end": "16"
+                    },
+                    {
+                        "label": "INTERACTS_WITH",
+                        "element_id": "10",
+                        "start": "16",
+                        "end": "17"
+                    },
+                    {
+                        "label": "INTERACTS_WITH",
+                        "element_id": "17",
+                        "start": "17",
+                        "end": "22"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "CompleteNode0"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "16"
+                            ],
+                            "CompleteNode16"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "17"
+                            ],
+                            "CompleteNode17"
+                        ]
+                    },
+                    {
+                        "output": 3,
+                        "input": [
+                            [
+                                "22"
+                            ],
+                            "CompleteNode22"
+                        ]
+                    }
+                ],
+                "edges": [
+                    {
+                        "output": 4,
+                        "input": [
+                            [
+                                "9"
+                            ],
+                            "CompleteEdge9"
+                        ]
+                    },
+                    {
+                        "output": 5,
+                        "input": [
+                            [
+                                "10"
+                            ],
+                            "CompleteEdge10"
+                        ]
+                    },
+                    {
+                        "output": 6,
+                        "input": [
+                            [
+                                "17"
+                            ],
+                            "CompleteEdge17"
+                        ]
+                    }
+                ]
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    },
+                    {
+                        "output": 1,
+                        "property": "full"
+                    },
+                    {
+                        "output": 2,
+                        "property": "full"
+                    },
+                    {
+                        "output": 3,
+                        "property": "full"
+                    }
+                ],
+                "edges": [
+                    {
+                        "output": 4,
+                        "property": "full"
+                    },
+                    {
+                        "output": 5,
+                        "property": "full"
+                    },
+                    {
+                        "output": 6,
+                        "property": "full"
+                    }
+                ]
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "n1",
+                    "n2",
+                    "n3",
+                    "e4",
+                    "e5",
+                    "e6"
+                ]
+            ]
+        }
+    ]
+}

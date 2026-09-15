@@ -1,0 +1,11 @@
+build/
+.vscode
+.venv
+eusolver
+.python-version
+benchmarks/cypher/config-generation/output/
+benchmarks/cypher/config-generation/database-config.txt
+query_test_output.csv
+__pycache__
+results.csv
+.idea/

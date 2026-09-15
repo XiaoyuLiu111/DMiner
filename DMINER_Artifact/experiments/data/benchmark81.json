@@ -1,0 +1,326 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "9",
+                        "label": "User",
+                        "following": 407,
+                        "follwers": 378,
+                        "name": "Billionaire",
+                        "userID": 1
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "User",
+                        "following": 51280,
+                        "name": "Right Relevance",
+                        "follwers": 51280,
+                        "userID": 2
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "Source",
+                        "name": "Buffer"
+                    },
+                    {
+                        "element_id": "12",
+                        "label": "User",
+                        "following": 175,
+                        "name": "Boston Scientific",
+                        "follwers": 34407,
+                        "userID": 4063
+                    },
+                    {
+                        "element_id": "13",
+                        "label": "Tweet",
+                        "favorites": 1,
+                        "created_at": "2021-03-15T18:14:01Z",
+                        "text": "Javaland 2021 – Was macht SRE eigentlich bei Neo4j Aura"
+                    },
+                    {
+                        "element_id": "14",
+                        "label": "Tweet",
+                        "favorites": 0,
+                        "created_at": "2021-03-16T14:21:01Z",
+                        "text": "Avec le lancement d#AuraEnterprise"
+                    },
+                    {
+                        "element_id": "15",
+                        "label": "Tweet",
+                        "favorites": 1,
+                        "created_at": "2021-03-16T04:02:01Z",
+                        "text": "Discover how financial institutions can use graph technology to meet their extensive data lineage challenges.… "
+                    },
+                    {
+                        "element_id": "16",
+                        "label": "Tweet",
+                        "favorites": 0,
+                        "created_at": "2021-03-16T00:10:00Z",
+                        "text": "@insideBigData features Neo4j's recently appointed VP of People, Kristin Thornby, in its latest news roundup"
+                    },
+                    {
+                        "element_id": "17",
+                        "label": "Tweet",
+                        "favorites": 2,
+                        "created_at": "2021-03-16T01:00:01Z",
+                        "text": "[Live Demo] Graph Algorithms Playground "
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "USING",
+                        "element_id": "3",
+                        "start": "13",
+                        "end": "11"
+                    },
+                    {
+                        "label": "RETWEETS",
+                        "element_id": "4",
+                        "start": "13",
+                        "end": "14"
+                    },
+                    {
+                        "label": "RETWEETS",
+                        "element_id": "5",
+                        "start": "13",
+                        "end": "15"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "11"
+                            ],
+                            "CompleteNode11"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "14"
+                            ],
+                            "CompleteNode14"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "11"
+                            ],
+                            "CompleteNode11"
+                        ]
+                    },
+                    {
+                        "output": 3,
+                        "input": [
+                            [
+                                "15"
+                            ],
+                            "CompleteNode15"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    },
+                    {
+                        "output": 1,
+                        "property": "full"
+                    },
+                    {
+                        "output": 2,
+                        "property": "full"
+                    },
+                    {
+                        "output": 3,
+                        "property": "full"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "n1"
+                ],
+                [
+                    "n2",
+                    "n3"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "8",
+                        "label": "Source",
+                        "name": "Buffer"
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "Source",
+                        "name": "Twitter Web"
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "User",
+                        "following": 1124,
+                        "follwers": 1124,
+                        "name": "Philip Rathle",
+                        "userID": 1385
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "User",
+                        "following": 175,
+                        "name": "Boston Scientific",
+                        "follwers": 34407,
+                        "userID": 4063
+                    },
+                    {
+                        "element_id": "12",
+                        "label": "Tweet",
+                        "favorites": 1,
+                        "created_at": "2021-03-15T18:14:01Z",
+                        "text": "Javaland 2021 – Was macht SRE eigentlich bei Neo4j Aura"
+                    },
+                    {
+                        "element_id": "13",
+                        "label": "Tweet",
+                        "favorites": 0,
+                        "created_at": "2021-03-16T14:21:01Z",
+                        "text": "Avec le lancement d#AuraEnterprise"
+                    },
+                    {
+                        "element_id": "14",
+                        "label": "Tweet",
+                        "favorites": 1,
+                        "created_at": "2021-03-16T04:02:01Z",
+                        "text": "Discover how financial institutions can use graph technology to meet their extensive data lineage challenges.… "
+                    },
+                    {
+                        "element_id": "15",
+                        "label": "Tweet",
+                        "favorites": 0,
+                        "created_at": "2021-03-16T00:10:00Z",
+                        "text": "@insideBigData features Neo4j's recently appointed VP of People, Kristin Thornby, in its latest news roundup"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "USING",
+                        "element_id": "3",
+                        "start": "12",
+                        "end": "8"
+                    },
+                    {
+                        "label": "RETWEETS",
+                        "element_id": "4",
+                        "start": "12",
+                        "end": "13"
+                    },
+                    {
+                        "label": "USING",
+                        "element_id": "5",
+                        "start": "14",
+                        "end": "9"
+                    },
+                    {
+                        "label": "RETWEETS",
+                        "element_id": "7",
+                        "start": "14",
+                        "end": "15"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "8"
+                            ],
+                            "CompleteNode8"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "13"
+                            ],
+                            "CompleteNode13"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "9"
+                            ],
+                            "CompleteNode9"
+                        ]
+                    },
+                    {
+                        "output": 3,
+                        "input": [
+                            [
+                                "15"
+                            ],
+                            "CompleteNode15"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    },
+                    {
+                        "output": 1,
+                        "property": "full"
+                    },
+                    {
+                        "output": 2,
+                        "property": "full"
+                    },
+                    {
+                        "output": 3,
+                        "property": "full"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "n1"
+                ],
+                [
+                    "n2",
+                    "n3"
+                ]
+            ]
+        }
+    ]
+}

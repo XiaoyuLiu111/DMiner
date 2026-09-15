@@ -1,0 +1,221 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "4",
+                        "label": "User"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Node",
+                        "value": 10
+                    },
+                    {
+                        "element_id": "6",
+                        "label": "Node",
+                        "value": 4
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "Node",
+                        "value": 4
+                    },
+                    {
+                        "element_id": "8",
+                        "label": "Node",
+                        "value": 100
+                    },
+                    {
+                        "element_id": "19",
+                        "label": "User"
+                    },
+                    {
+                        "element_id": "20",
+                        "label": "User"
+                    },
+                    {
+                        "element_id": "21",
+                        "label": "User"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "relation",
+                        "element_id": "13",
+                        "start": "19",
+                        "end": "5",
+                        "uuid": 1
+                    },
+                    {
+                        "label": "relation",
+                        "element_id": "14",
+                        "start": "20",
+                        "end": "6",
+                        "uuid": 2
+                    },
+                    {
+                        "label": "relation",
+                        "element_id": "15",
+                        "start": "21",
+                        "end": "8",
+                        "uuid": 3
+                    },
+                    {
+                        "label": "relation",
+                        "element_id": "16",
+                        "start": "21",
+                        "end": "5",
+                        "uuid": 3
+                    },
+                    {
+                        "label": "relation",
+                        "element_id": "17",
+                        "start": "4",
+                        "end": "5",
+                        "uuid": 4
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [],
+                "edges": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "13"
+                            ],
+                            1
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "14"
+                            ],
+                            2
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "15","16"
+                            ],
+                            3
+                        ]
+                    },
+                    {
+                        "output": 3,
+                        "input": [
+                            [
+                                "17"
+                            ],
+                            4
+                        ]
+                    }
+                ]
+            },
+            "mapping2": {
+                "nodes": [],
+                "edges": [
+                    {
+                        "output": 0,
+                        "property": "uuid"
+                    },
+                    {
+                        "output": 1,
+                        "property": "uuid"
+                    },
+                    {
+                        "output": 2,
+                        "property": "uuid"
+                    },
+                    {
+                        "output": 3,
+                        "property": "uuid"
+                    }
+                ]
+            },
+            "mapping3": [
+                {
+                    "operator": "max",
+                    "property": "value",
+                    "data": ["n5"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "min",
+                    "property": "value",
+                    "data": ["n5"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "max",
+                    "property": "value",
+                    "data": ["n6"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "min",
+                    "property": "value",
+                    "data": ["n6"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "max",
+                    "property": "value",
+                    "data": ["n8", "n5"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "min",
+                    "property": "value",
+                    "data": ["n8", "n5"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "max",
+                    "property": "value",
+                    "data": ["n5"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "min",
+                    "property": "value",
+                    "data": ["n5"],
+                    "lhs": {},
+                    "rhs": {}
+                }
+            ],
+            "correspondence": [
+                [
+                    "e0",
+                    "exp0", "exp1"
+                ],
+                [
+                    "e1",
+                    "exp2", "exp3"
+                ],
+                [
+                    "e2",
+                    "exp4", "exp5"
+                ],
+                [
+                    "e3",
+                    "exp6", "exp7"
+                ]
+            ]
+        }
+    ]
+}

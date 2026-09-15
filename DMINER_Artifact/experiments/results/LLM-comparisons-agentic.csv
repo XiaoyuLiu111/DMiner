@@ -1,0 +1,91 @@
+benchmark_id,synthesized,correct_or_not,desired_or_not
+2,"MATCH (a:Person)-[r:MY_RELATION]->(b:Person) WHERE r.minimum <= 21 AND r.maximum >= 21 RETURN a, r, b",TRUE,TRUE
+3,"MATCH (a:User)-[:RT_MENTIONS]->(b:User) RETURN a.name, b.name",TRUE,FALSE
+4,MATCH (b1:BasketOne)-[:INCLUDE]->(a:Apple)<-[:INCLUDE]-(b2:BasketTwo) RETURN count(a),TRUE,TRUE
+5,"MATCH (p:Person {firstname: ""foo""})-[:CREATED_EVENT]->(e:Event)-[:ANSWERED]->(q:question {id: 2}) RETURN p, e, q",TRUE,TRUE
+6,"MATCH (n:Crew {name: ""Neo""})-[:KNOWS]->(m:Crew)-[:KNOWS]->(c:Crew) RETURN c.name",TRUE,TRUE
+7,"MATCH (a:User)-[r1:INTERACTS_WITH]->(b:User)-[r2:INTERACTS_WITH]->(c:User)-[r3:INTERACTS_WITH]->(d:User) RETURN a, b, c, d, r1, r2, r3",TRUE,TRUE
+8,"MATCH (p1:Parent {name: ""Bob""})-[:HAS]->(c:Child {name: ""Daughter""})<-[:HAS]-(p2:Parent {name: ""Bob""}) WHERE p1 <> p2 RETURN p1, p2",TRUE,FALSE
+9,"MATCH (p:Parent {name: ""Bob""})-[:HAS]->(c:Child) RETURN c.name",TRUE,TRUE
+10,"MATCH (p:Person {name: ""Charlie Sheen""})-[:ACTED_IN]->(m:Movie) RETURN m.title",TRUE,TRUE
+11,"MATCH (s:Store)-[:Sells]->(i:Item) RETURN s.name, sum(i.price)",TRUE,TRUE
+12,MATCH (p:Person)-[:WORKS_AT]->(b:Bank)<-[:BANKS_AT]-(p) RETURN p,TRUE,TRUE
+13,"MATCH (p:Person) RETURN p.job, count(p.job)",TRUE,TRUE
+14,"MATCH (p:Project)<-[r:charged_project]-(e:Employee) RETURN p.name, sum(r.hours)",TRUE,TRUE
+15,MATCH (p:Person) WHERE p.age < 35 RETURN p.name,TRUE,TRUE
+16,MATCH (p:Person)-[:BANKS_AT]->(:Bank) RETURN p,TRUE,TRUE
+17,"MATCH (a:User)-[:FOLLOWS]->(b:User) RETURN a, b",TRUE,TRUE
+18,MATCH (n:Node) RETURN n.worked + n.retired,TRUE,TRUE
+19,"MATCH (a:Airport) RETURN a.city, sum(a.capacity)",TRUE,TRUE
+20,"MATCH (u:User)-[r:relation]->(n:Node) RETURN r.uuid, max(n.value), min(n.value)",TRUE,TRUE
+21,"MATCH (c:wine_critic)-[r:REVIEW]->(b:wine_bottle) RETURN c.name, b.name, max(r.score), min(r.score)",TRUE,TRUE
+22,"MATCH (p:Person) RETURN p.name, count(p), min(p.age), max(p.age)",TRUE,TRUE
+23,"MATCH (p:Person) RETURN p.name, p.age, count(p)",TRUE,TRUE
+24,MATCH (m:Movie) RETURN m.title,TRUE,TRUE
+25,"MATCH (n:Node) RETURN n.name, sum(n.number)",TRUE,TRUE
+26,"MATCH (t:Tutor {name: ""Maria Smith""})-[:WORKS_AT]->(:Department {name: ""Science""}), (t)-[r:RESPONSIBLE_FOR]->(c:Course) RETURN t.name, r, c",TRUE,TRUE
+27,"MATCH (s1:Student)-[:ENROLLEDIN]->(c:Course)<-[:ENROLLEDIN]-(s2:Student) WHERE s1 <> s2 AND s1.lastname = s2.lastname RETURN s1.firstname, s2.firstname, c.name",TRUE,FALSE
+28,"MATCH (p:Person {name: ""Tom Cruise""})-[:ACTED_IN]->(m:Movie) RETURN m.title",TRUE,TRUE
+29,MATCH (m:Movie) WHERE m.released = 2000 RETURN m.title,TRUE,TRUE
+30,"MATCH (g:Group)-[:R]->(a:Age), (g)-[:R]->(c:City) RETURN a, c, g",TRUE,TRUE
+31,"MATCH (p:Person {name: ""Mark""}) RETURN p",TRUE,TRUE
+32,"MATCH (c:Client)-[r:CONTAINS {created: ""yesterday""}]->(t:Transaction)-[:INCLUDES]->(i:Item) RETURN c, t, i",TRUE,TRUE
+33,"MATCH (p:Person {name: ""Tom Hanks""})-[r:ACTED_IN]->(m:Movie) RETURN p, r, m",TRUE,TRUE
+34,"MATCH (u:User)-[:HAS_HOBBY]->(h:Hobby) WHERE h.name IN [""Music"", ""Sport""] RETURN u",TRUE,TRUE
+35,"MATCH (u:User)-[:likes]->(i:Item)<-[:likes]-(other:User) WHERE u <> other RETURN u, count(i)",TRUE,TRUE
+36,"MATCH ()-[r:KNOWS]->() RETURN sum(r.duration), avg(r.duration)",TRUE,FALSE
+37,"MATCH (t:Tutor {name: ""Maria Smith""}) RETURN t",TRUE,FALSE
+38,"MATCH (t:Tutor)-[:RESPONSIBLE_FOR]->(c:Course) RETURN t.name, c",TRUE,TRUE
+39,"MATCH (t:Tutor {name: ""Maria Smith""})-[:WORKS_AT]->(:Department), (t)-[r:RESPONSIBLE_FOR]->(c:Course) RETURN t.name, r, c",TRUE,TRUE
+40,"MATCH (s:Student) WHERE s.class = ""Sophomore"" RETURN avg(s.GPA)",TRUE,TRUE
+41,MATCH (q:Question) WHERE q.viewCount >= 35 RETURN q.viewCount,TRUE,FALSE
+42,"MATCH (p:Person)-[:WROTE]->(m:Movie) RETURN p.name, m.title",TRUE,TRUE
+43,"MATCH (u:User) WHERE u.name IN [""Jim"", ""Jack"", ""John""] RETURN u.name",TRUE,FALSE
+44,"MATCH (pc:ProductionCompany)-[:PRODUCED]->(m:Movie) WHERE m.year >= ""2008"" RETURN pc.name, m.title",TRUE,FALSE
+45,"MATCH (p:Place)-[:IS_A]->(:Category {name: ""Bar""}) RETURN p",TRUE,TRUE
+46,"MATCH (p:Place)-[:IS_A]->(c:Category) WHERE c.name IN [""Food"", ""Bar""] RETURN p",TRUE,TRUE
+47,MATCH (p:Person)-[:WORKS_AT]->(:Bank) RETURN p,TRUE,TRUE
+48,"MATCH (s:Student)-[:Follow]->(c:Course {course_nb: ""1""}) RETURN s.name, c.coursename",TRUE,TRUE
+49,"MATCH (a:User)-[:INTERACTS_WITH]->(b:User) RETURN a.name, b.name",TRUE,TRUE
+50,"MATCH (a:Node)-[r1:r {cid: ""01""}]->(b:Node)-[r2:r {cid: ""02"", ref_id: ""0001""}]->(c:Node) RETURN a, b, c",TRUE,TRUE
+51,MATCH (m:movie) RETURN m LIMIT 3,FALSE,FALSE
+52,"MATCH (s:Sample)-[:Measures]->(g:Gene)-[:Part_Of]->(:Pathway {pathwayName: ""Pyrimidine metabolism""}) RETURN s, g.geneName",TRUE,TRUE
+53,"MATCH (o:Order)-[:ORDERS]->(p:Product)-[:PART_OF]->(c:Category) RETURN c.categoryName, p.productName",TRUE,TRUE
+54,MATCH (o:Order)-[:ORDERS]->(p:Product) RETURN p.productName,TRUE,TRUE
+55,"MATCH (o:Order)-[r:ORDERS]->(p:Product) WHERE r.discount IN [""0.5"", ""0.25"", ""0.2""] RETURN p.productName",TRUE,FALSE
+56,"MATCH (me:Me)-[:INTERACT_WITH]->(u:User) RETURN max(u.follwers), min(u.follwers), avg(u.follwers), count(u.follwers)",TRUE,FALSE
+57,"MATCH (me:Me)-[:AMPLIFIES]->(a:User), (me)-[:FOLLOWS]->(f:User) RETURN me.name, (max(a.follwers)/avg(a.follwers)) - (min(a.follwers)/avg(a.follwers)), (max(f.follwers)/avg(f.follwers)) - (min(f.follwers)/avg(f.follwers))",TRUE,FALSE
+58,"MATCH (me:Me)-[:AMPLIFIES]->(a:User), (me)-[:FOLLOWS]->(f:User) RETURN me.name, (max(a.following) - min(a.following)), (max(f.following) - min(f.following))",TRUE,FALSE
+59,"MATCH (me:Me)-[:AMPLIFIES]->(a:User), (f:User)-[:FOLLOWS]->(me) RETURN a.name, max(f.follwers), min(f.follwers), avg(f.following)",TRUE,FALSE
+60,"MATCH (u:User)-[:POSTS]->(t:Tweet)-[:RETWEETS]->(:Tweet) RETURN u.name, t1.text",TRUE,TRUE
+61,"MATCH (t:Tweet)-[:USING]->(s:Source) RETURN t.text, s.name",TRUE,TRUE
+62,"MATCH (me:Me)-[:AMPLIFIES]->(a:User), (me)-[:FOLLOWS]->(f:User) RETURN a, max(f.following), count(f.following), min(f.following), avg(f.following)",FALSE,FALSE
+63,"MATCH (me:Me)-[:AMPLIFIES]->(a:User), (me)-[:FOLLOWS]->(f:User) RETURN a.name, max(f.follwers), count(f)",FALSE,FALSE
+64,"MATCH (me:Me)-[:FOLLOWS]->(:User)-[:POSTS]->(t:Tweet)-[:TAGS]->(h:Hashtag), (t)-[:CONTAINS]->(l:Link), (t)-[:USING]->(s:Source) RETURN me, t, h, l, s",TRUE,TRUE
+65,"MATCH (c:Customer {country: ""USA""})-[:PURCHASED]->(:Order)-[:ORDERS]->(p:Product)-[:PART_OF]->(cat:Category), (s:Supplier)-[:SUPPLIES]->(p) RETURN c.name, cat.name, s.companyName, p.productName",TRUE,TRUE
+66,"MATCH (c:Customer {country: ""Canada""})-[:PURCHASED]->(:Order)-[:ORDERS]->(p:Product), (s:Supplier)-[:SUPPLIES]->(p) RETURN c.name, s.companyName, p.productName",TRUE,FALSE
+67,"MATCH (s:Supplier)-[:SUPPLIES]->(p:Product) WHERE p.unitPrice <= 200 RETURN s.companyName, p.productName",TRUE,FALSE
+68,"MATCH (c:Customer)-[:PURCHASED]->(:Order)-[:ORDERS]->(p:Product), (s:Supplier)-[:SUPPLIES]->(p) WHERE s.companyName STARTS WITH ""Leka"" RETURN c, s, p",TRUE,FALSE
+69,"MATCH (pc:ProductionCompany {name: ""WaltDisney""})-[:PRODUCED]->(m:Movie {year: ""2012""}) RETURN pc.name, m.title",TRUE,TRUE
+70,"MATCH (pc:ProductionCompany {name: ""WaltDisney""})-[:PRODUCED]->(m:Movie) WHERE m.year IN [""1999"", ""2008""] RETURN pc.name, m.title",TRUE,TRUE
+71,MATCH (:Me)-[:RT_MENTIONS]->(u:User) RETURN u.name,TRUE,TRUE
+72,"MATCH (pc:ProductionCompany {name: ""WaltDisney""})-[:PRODUCED]->(m:Movie) WHERE m.year IN [""2008"", ""2012""] RETURN pc, m",TRUE,TRUE
+73,"MATCH (a:Person {name: ""Keanu Reeves""})-[:KNOWS]->(b:Person) RETURN a.age, b.age",TRUE,TRUE
+74,"MATCH (a:Person)-[r1:ACTED_IN]->(m:Movie {title: ""Wall Street""})<-[r2:DIRECTED]-(d:Person) RETURN a, r1, m, r2, d",TRUE,TRUE
+75,"MATCH (pc:ProductionCompany)-[:PRODUCED]->(m:Movie) WHERE m.year >= ""2008"" RETURN pc.name, m.title",TRUE,FALSE
+76,"MATCH (a:Person {name: ""Andy""})-[:KNOWS]->(p:Person) WHERE p.age >= 36 RETURN p.name",TRUE,TRUE
+77,MATCH (a:Person)-[r:KNOWS]->(b:Person) RETURN b ORDER BY r.since ASC LIMIT 1,TRUE,FALSE
+78,"MATCH (q:Question)-[:TAGGED]->(t:Tag) WHERE t.name IN [""postgresql"", ""python-3.x"", ""odbc""] AND q.viewCount >= 35 RETURN max(q.viewCount), min(q.viewCount), avg(q.viewCount), count(q.viewCount)",TRUE,FALSE
+79,"MATCH (c:Customer)-[:PURCHASED]->(:Order)-[:ORDERS]->(p:Product)-[:PART_OF]->(cat:Category), (s:Supplier {country: ""Italy""})-[:SUPPLIES]->(p) RETURN c.name, cat.name, s.companyName, p.productName",TRUE,TRUE
+80,"MATCH (p1:Person)-[:KNOWS]->(p2:Person)-[:PARTY_TO]->(c:Crime)-[:INVESTIGATED_BY]->(o:Officer {rank: ""Sergeant""}) RETURN p1, p2, o, count(c)",TRUE,TRUE
+81,"MATCH (s1:Source)<-[:USING]-(t:Tweet)-[:RETWEETS]->(rt:Tweet) RETURN u, rt",TRUE,TRUE
+82,"MATCH (p:Person) RETURN p.name, p.age",FALSE,FALSE
+83,"MATCH (pc:ProductionCompany {country: ""USA""})-[:PRODUCED]->(m:Movie) WHERE m.year IN [""2008"", ""2012""] RETURN pc.name, m.title",FALSE,FALSE
+84,"MATCH (p:Post)-[:post]->(:User {uid: ""999""}), (p)-[r:review]->(:Review) RETURN p.location ORDER BY r.score ASC LIMIT 1",TRUE,FALSE
+85,"MATCH (parent:Token)-[:BEFORE]->(a:Token), (parent)-[:BEFORE]->(b:Token) WHERE a <> b RETURN a, b",FALSE,FALSE
+86,"MATCH (p:Person {name: ""Keanu Reeves""}) RETURN p.nationality",TRUE,TRUE
+87,"MATCH (p:Person) WHERE p.age >= 41 RETURN p.name, p.age",TRUE,TRUE
+88,"MATCH (p:Person)-[:ACTED_IN]->(m:Movie {title: ""Stand By Me""}) RETURN p",TRUE,TRUE
+89,"MATCH (a:Person)-[:FOLLOWS]->(b:Person) WHERE split(a.name, "" "")[1] = split(b.name, "" "")[1] RETURN a, b",TRUE,FALSE
+90,"MATCH (p:Person) WHERE p.born >= 1970 AND p.born < 1980 RETURN p.name, p.born",TRUE,TRUE
+91,"MATCH (p:Person {name: ""Keanu Reeves""}) RETURN p",TRUE,TRUE

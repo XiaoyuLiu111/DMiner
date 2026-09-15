@@ -1,0 +1,224 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "4",
+                        "label": "User",
+                        "following": 407,
+                        "follwers": 378,
+                        "name": "Billionaire",
+                        "userID": 1
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Tweet",
+                        "created_at": "2021-03-15T18:14:01Z",
+                        "text": "Javaland 2021 – Was macht SRE eigentlich bei Neo4j Aura"
+                    },
+                    {
+                        "element_id": "6",
+                        "label": "Tweet",
+                        "created_at": "2021-03-16T14:21:01Z",
+                        "text": "Avec le lancement d#AuraEnterprise"
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "Tweet",
+                        "created_at": "2021-03-16T04:02:01Z",
+                        "text": "Discover how financial institutions can use graph technology to meet their extensive data lineage challenges.… "
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "POSTS",
+                        "element_id": "3",
+                        "start": "4",
+                        "end": "5"
+                    },
+                    {
+                        "label": "RETWEETS",
+                        "element_id": "4",
+                        "start": "5",
+                        "end": "6"
+                    },
+                    {
+                        "label": "RETWEETS",
+                        "element_id": "5",
+                        "start": "5",
+                        "end": "7"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "4"
+                            ],
+                            "Billionaire"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "5"
+                            ],
+                            "Javaland 2021 – Was macht SRE eigentlich bei Neo4j Aura"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "4"
+                            ],
+                            "Billionaire"
+                        ]
+                    },
+                    {
+                        "output": 3,
+                        "input": [
+                            [
+                                "5"
+                            ],
+                            "Javaland 2021 – Was macht SRE eigentlich bei Neo4j Aura"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "name"
+                    },
+                    {
+                        "output": 1,
+                        "property": "text"
+                    },
+                    {
+                        "output": 2,
+                        "property": "name"
+                    },
+                    {
+                        "output": 3,
+                        "property": "text"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "n1"
+                ],
+                [
+                    "n2",
+                    "n3"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "7",
+                        "label": "User",
+                        "following": 407,
+                        "follwers": 378,
+                        "name": "Billionaire",
+                        "userID": 1
+                    },
+                    {
+                        "element_id": "8",
+                        "label": "Tweet",
+                        "created_at": "2021-03-16T11:00:04Z",
+                        "text": "Produktdatenmanagement mit der Graphdatenbank Neo4j"
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "Tweet",
+                        "created_at": "2021-03-16T10:41:00Z",
+                        "text": "our first live podcast, live on @twitch. We'll be discussing how we g…"
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "Tweet",
+                        "created_at": "2021-03-14T05:01:28Z",
+                        "text": "Open data API of #Politikus provides data researchers and journalists data to investigate and analyse complicated r…"
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "Tweet",
+                        "created_at": "2021-03-16T14:21:01Z",
+                        "text": "[Virtual Event] Connections: Graphs for Cybersecurity in APAC"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "POSTS",
+                        "element_id": "3",
+                        "start": "7",
+                        "end": "9"
+                    },
+                    {
+                        "label": "RETWEETS",
+                        "element_id": "4",
+                        "start": "9",
+                        "end": "10"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "7"
+                            ],
+                            "Billionaire"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "9"
+                            ],
+                            "our first live podcast, live on @twitch. We'll be discussing how we g…"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "name"
+                    },
+                    {
+                        "output": 1,
+                        "property": "text"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "n1"
+                ]
+            ]
+        }
+    ]
+}

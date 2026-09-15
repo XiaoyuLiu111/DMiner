@@ -1,0 +1,367 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "11",
+                        "label": "Department",
+                        "department": "Math"
+                    },
+                    {
+                        "element_id": "12",
+                        "label": "Department",
+                        "department": "Science"
+                    },
+                    {
+                        "element_id": "13",
+                        "label": "Department",
+                        "department": "Socials"
+                    },
+                    {
+                        "element_id": "14",
+                        "label": "Tutor",
+                        "name": "Maria Smith"
+                    },
+                    {
+                        "element_id": "15",
+                        "label": "Tutor",
+                        "name": "Maria Smith"
+                    },
+                    {
+                        "element_id": "16",
+                        "label": "Tutor",
+                        "name": "Mary"
+                    },
+                    {
+                        "element_id": "17",
+                        "label": "Tutor",
+                        "name": "Maria Smith"
+                    },
+                    {
+                        "element_id": "18",
+                        "label": "Course",
+                        "name": "Linear Algebra"
+                    },
+                    {
+                        "element_id": "19",
+                        "label": "Department",
+                        "department": "Science"
+                    },
+                    {
+                        "element_id": "20",
+                        "label": "Tutor",
+                        "name": "Maria Smith"
+                    },
+                    {
+                        "element_id": "21",
+                        "label": "Course",
+                        "name": "Physics 100"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "WORKS_AT",
+                        "element_id": "5",
+                        "start": "14",
+                        "end": "12"
+                    },
+                    {
+                        "label": "WORKS_AT",
+                        "element_id": "6",
+                        "start": "16",
+                        "end": "19"
+                    },
+                    {
+                        "label": "WORKS_AT",
+                        "element_id": "7",
+                        "start": "17",
+                        "end": "11"
+                    },
+                    {
+                        "label": "RESPONSIBLE_FOR",
+                        "element_id": "8",
+                        "start": "16",
+                        "end": "21"
+                    },
+                    {
+                        "label": "WORKS_AT",
+                        "element_id": "9",
+                        "start": "20",
+                        "end": "13"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "14"
+                            ],
+                            "CompleteNode14"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "4",
+                        "label": "Tutor",
+                        "name": "Maria Smith"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Tutor",
+                        "name": "Max"
+                    },
+                    {
+                        "element_id": "6",
+                        "label": "Course",
+                        "name": "Biology 101"
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "Department",
+                        "department": "Science"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "WORKS_AT",
+                        "element_id": "2",
+                        "start": "4",
+                        "end": "7"
+                    },
+                    {
+                        "label": "WORKS_AT",
+                        "element_id": "3",
+                        "start": "5",
+                        "end": "7"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "4"
+                            ],
+                            "CompleteNode4"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "6",
+                        "label": "Department",
+                        "department": "Science"
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "Department",
+                        "department": "Socials"
+                    },
+                    {
+                        "element_id": "8",
+                        "label": "Course",
+                        "name": "Topology"
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "Tutor",
+                        "name": "Maria Smith"
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "Course",
+                        "name": "Biology 100"
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "Tutor",
+                        "name": "Joe Smith"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "RESPONSIBLE_FOR",
+                        "element_id": "5",
+                        "start": "9",
+                        "end": "10"
+                    },
+                    {
+                        "label": "WORKS_AT",
+                        "element_id": "6",
+                        "start": "9",
+                        "end": "6"
+                    },
+                    {
+                        "label": "WORKS_AT",
+                        "element_id": "7",
+                        "start": "11",
+                        "end": "6"
+                    },
+                    {
+                        "label": "RESPONSIBLE_FOR",
+                        "element_id": "8",
+                        "start": "11",
+                        "end": "8"
+                    },
+                    {
+                        "label": "WORKS_AT",
+                        "element_id": "9",
+                        "start": "11",
+                        "end": "7"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "9"
+                            ],
+                            "CompleteNode9"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Department",
+                        "department": "Science"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Tutor",
+                        "name": "Maria Smith"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Course",
+                        "name": "Macroeconomics"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "Tutor",
+                        "name": "Mary"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "RESPONSIBLE_FOR",
+                        "element_id": "0",
+                        "start": "1",
+                        "end": "2"
+                    },
+                    {
+                        "label": "WORKS_AT",
+                        "element_id": "1",
+                        "start": "3",
+                        "end": "0"
+                    },
+                    {
+                        "label": "WORKS_AT",
+                        "element_id": "5",
+                        "start": "1",
+                        "end": "0"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "1"
+                            ],
+                            "CompleteNode1"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ]
+            ]
+        }
+    ]
+}

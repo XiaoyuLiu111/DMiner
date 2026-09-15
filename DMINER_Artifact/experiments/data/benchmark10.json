@@ -1,0 +1,197 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Person",
+                        "name": "Charlie Sheen"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Person",
+                        "name": "Martin Sheen"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Person",
+                        "name": "Michael Douglas"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "Person",
+                        "name": "Oliver Stone"
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "Person",
+                        "name": "Rob Reiner"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Movie",
+                        "title": "Wall Street"
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "Movie",
+                        "title": "The American President"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "0",
+                        "start": "0",
+                        "end": "5",
+                        "role": "Bud Fox"
+                    },
+                    {
+                        "label": "DIRECTED",
+                        "element_id": "1",
+                        "start": "3",
+                        "end": "5"
+                    },
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "2",
+                        "start": "1",
+                        "end": "9",
+                        "role": "A.J. MacInerney"
+                    },
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "3",
+                        "start": "2",
+                        "end": "9",
+                        "role": "President Andrew Shepherd"
+                    },
+                    {
+                        "label": "DIRECTED",
+                        "element_id": "4",
+                        "start": "4",
+                        "end": "9"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "5"
+                            ],
+                            "Wall Street"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "title"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Person",
+                        "name": "Charlie Sheen"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Person",
+                        "name": "Tom Hanks"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Person",
+                        "name": "Leonardo DiCaprio"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "Movie",
+                        "title": "Major League"
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "Movie",
+                        "title": "Forrest Gump"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Movie",
+                        "title": "Titanic"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "0",
+                        "start": "0",
+                        "end": "3",
+                        "role": "Bud"
+                    },
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "1",
+                        "start": "1",
+                        "end": "4",
+                        "role": "Forrest Gump"
+                    },
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "2",
+                        "start": "2",
+                        "end": "5",
+                        "role": "Jack Dawson"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "3"
+                            ],
+                            "Major League"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "title"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,305 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Person",
+                        "name": "Andy",
+                        "age": 36
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Person",
+                        "name": "Timothy",
+                        "age": 38
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Person",
+                        "name": "Peter",
+                        "age": 35
+                    },
+                    {
+                        "element_id": "6",
+                        "label": "Person",
+                        "name": "Lisa",
+                        "age": 48
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "Person",
+                        "name": "John",
+                        "age": 40
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "Person",
+                        "name": "Susan",
+                        "age": 32
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "KNOWS",
+                        "element_id": "0",
+                        "start": "0",
+                        "end": "1"
+                    },
+                    {
+                        "label": "KNOWS",
+                        "element_id": "1",
+                        "start": "0",
+                        "end": "2"
+                    },
+                    {
+                        "label": "KNOWS",
+                        "element_id": "4",
+                        "start": "2",
+                        "end": "6"
+                    },
+                    {
+                        "label": "KNOWS",
+                        "element_id": "8",
+                        "start": "6",
+                        "end": "7"
+                    },
+                    {
+                        "label": "KNOWS",
+                        "element_id": "9",
+                        "start": "7",
+                        "end": "11"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "1"
+                            ],
+                            "Timothy"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "name"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Person",
+                        "name": "Andy",
+                        "age": 60
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Person",
+                        "name": "Steve",
+                        "age": 34
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Person",
+                        "name": "Kerry",
+                        "age": 36
+                    },
+                    {
+                        "element_id": "8",
+                        "label": "Person",
+                        "name": "Howard",
+                        "age": 38
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "Person",
+                        "name": "Matt",
+                        "age": 29
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "Person",
+                        "name": "Jess",
+                        "age": 30
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "KNOWS",
+                        "element_id": "0",
+                        "start": "0",
+                        "end": "1"
+                    },
+                    {
+                        "label": "KNOWS",
+                        "element_id": "1",
+                        "start": "0",
+                        "end": "2"
+                    },
+                    {
+                        "label": "KNOWS",
+                        "element_id": "5",
+                        "start": "0",
+                        "end": "8"
+                    },
+                    {
+                        "label": "KNOWS",
+                        "element_id": "6",
+                        "start": "9",
+                        "end": "10"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "8"
+                            ],
+                            "Howard"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "2"
+                            ],
+                            "Kerry"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "name"
+                    },
+                    {
+                        "output": 1,
+                        "property": "name"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ],
+                [
+                    "n1"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "3",
+                        "label": "Person",
+                        "name": "Matthew",
+                        "age": 27
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "Person",
+                        "name": "Andy",
+                        "age": 23
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Person",
+                        "name": "Kate",
+                        "age": 42
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "Person",
+                        "name": "James",
+                        "age": 36
+                    },
+                    {
+                        "element_id": "8",
+                        "label": "Person",
+                        "name": "Jake",
+                        "age": 35
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "KNOWS",
+                        "element_id": "2",
+                        "start": "3",
+                        "end": "7"
+                    },
+                    {
+                        "label": "KNOWS",
+                        "element_id": "3",
+                        "start": "3",
+                        "end": "8"
+                    },
+                    {
+                        "label": "KNOWS",
+                        "element_id": "5",
+                        "start": "4",
+                        "end": "5"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "5"
+                            ],
+                            "Kate"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "name"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ]
+            ]
+        }
+    ]
+}

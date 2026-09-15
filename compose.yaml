@@ -1,0 +1,27 @@
+services:
+  dminer:
+    image: dminer:snapshot
+    container_name: dminer-container
+
+    mem_limit: 16g
+    memswap_limit: 16g
+    cpus: 6
+
+    stdin_open: true
+    tty: true
+
+    volumes:
+      - ./dbFiles:/dbFiles
+      - ./scripts:/scripts
+      - ./EUSolver:/EUSolver
+      - ./DMINER_Artifact:/DMINER_Artifact
+
+    environment:
+      NEO4J_ACCEPT_LICENSE_AGREEMENT: "yes"
+      NEO4J_AUTH: "neo4j/pswd1234"
+
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+
+    command: bash

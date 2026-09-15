@@ -1,0 +1,130 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Person",
+                        "bornIn": "Beirut",
+                        "nationality": "Canadian",
+                        "name": "Keanu Reeves"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Movie",
+                        "title": "Man of Tai Chi",
+                        "released": 2013
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "ACTED_IN",
+                        "element_id": "0",
+                        "start": "0",
+                        "end": "1"
+                    },
+                    {
+                        "label": "DIRECTED",
+                        "element_id": "1",
+                        "start": "0",
+                        "end": "1"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "CompleteNode0"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "4",
+                        "label": "Person",
+                        "bornIn": "London",
+                        "nationality": "Canadian",
+                        "name": "Ryan Gosling"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Person",
+                        "bornIn": "Littlebeck",
+                        "nationality": "British",
+                        "name": "Joanne Froggatt"
+                    },
+                    {
+                        "element_id": "6",
+                        "label": "Person",
+                        "bornIn": "Concord",
+                        "nationality": "American",
+                        "name": "Tom Hanks"
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "Person",
+                        "bornIn": "Beirut",
+                        "nationality": "Canadian",
+                        "name": "Keanu Reeves"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "7"
+                            ],
+                            "CompleteNode7"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ]
+            ]
+        }
+    ]
+}

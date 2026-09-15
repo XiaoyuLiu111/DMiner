@@ -1,0 +1,305 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "4",
+                        "label": "Tag",
+                        "name": "postgresql"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Tag",
+                        "name": "graphrag"
+                    },
+                    {
+                        "element_id": "6",
+                        "label": "Question",
+                        "viewCount": 60
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "Question",
+                        "viewCount": 69
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "TAGGED",
+                        "element_id": "2",
+                        "start": "7",
+                        "end": "5"
+                    },
+                    {
+                        "label": "TAGGED",
+                        "element_id": "3",
+                        "start": "6",
+                        "end": "4"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [],
+                "edges": []
+            },
+            "mapping3": [
+                {
+                    "operator": "max",
+                    "property": "viewCount",
+                    "data": ["n6"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "min",
+                    "property": "viewCount",
+                    "data": ["n6"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "avg",
+                    "property": "viewCount",
+                    "data": ["n6"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "count",
+                    "property": "viewCount",
+                    "data": ["n6"],
+                    "lhs": {},
+                    "rhs": {}
+                }
+            ],
+            "correspondence": [["exp0", "exp1", "exp2", "exp3"]]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "8",
+                        "label": "Tag",
+                        "name": "python-3.x"
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "Tag",
+                        "name": "java"
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "Question",
+                        "viewCount": 35
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "Tag",
+                        "name": "python2"
+                    },
+                    {
+                        "element_id": "12",
+                        "label": "Tag",
+                        "name": "odbc"
+                    },
+                    {
+                        "element_id": "13",
+                        "label": "Question",
+                        "viewCount": 62
+                    },
+                    {
+                        "element_id": "14",
+                        "label": "Question",
+                        "viewCount": 71
+                    },
+                    {
+                        "element_id": "15",
+                        "label": "Question",
+                        "viewCount": 27
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "TAGGED",
+                        "element_id": "4",
+                        "start": "15",
+                        "end": "11"
+                    },
+                    {
+                        "label": "TAGGED",
+                        "element_id": "5",
+                        "start": "14",
+                        "end": "12"
+                    },
+                    {
+                        "label": "TAGGED",
+                        "element_id": "6",
+                        "start": "13",
+                        "end": "9"
+                    },
+                    {
+                        "label": "TAGGED",
+                        "element_id": "7",
+                        "start": "10",
+                        "end": "8"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [],
+                "edges": []
+            },
+            "mapping3": [
+                {
+                    "operator": "max",
+                    "property": "viewCount",
+                    "data": ["n10","n14"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "min",
+                    "property": "viewCount",
+                    "data": ["n10","n14"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "avg",
+                    "property": "viewCount",
+                    "data": ["n10","n14"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "count",
+                    "property": "viewCount",
+                    "data": ["n10","n14"],
+                    "lhs": {},
+                    "rhs": {}
+                }
+            ],
+            "correspondence": [["exp0", "exp1", "exp2", "exp3"]]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "8",
+                        "label": "Tag",
+                        "name": "python"
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "Tag",
+                        "name": "postgresql"
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "Tag",
+                        "name": "odbc"
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "Tag",
+                        "name": "c++"
+                    },
+                    {
+                        "element_id": "12",
+                        "label": "Question",
+                        "viewCount": 34
+                    },
+                    {
+                        "element_id": "13",
+                        "label": "Question",
+                        "viewCount": 37
+                    },
+                    {
+                        "element_id": "14",
+                        "label": "Question",
+                        "viewCount": 32
+                    },
+                    {
+                        "element_id": "15",
+                        "label": "Question",
+                        "viewCount": 61
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "TAGGED",
+                        "element_id": "4",
+                        "start": "12",
+                        "end": "8"
+                    },
+                    {
+                        "label": "TAGGED",
+                        "element_id": "5",
+                        "start": "13",
+                        "end": "9"
+                    },
+                    {
+                        "label": "TAGGED",
+                        "element_id": "6",
+                        "start": "14",
+                        "end": "10"
+                    },
+                    {
+                        "label": "TAGGED",
+                        "element_id": "7",
+                        "start": "15",
+                        "end": "11"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [],
+                "edges": []
+            },
+            "mapping3": [
+                {
+                    "operator": "max",
+                    "property": "viewCount",
+                    "data": ["n13"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "min",
+                    "property": "viewCount",
+                    "data": ["n13"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "avg",
+                    "property": "viewCount",
+                    "data": ["n13"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "count",
+                    "property": "viewCount",
+                    "data": ["n13"],
+                    "lhs": {},
+                    "rhs": {}
+                }
+            ],
+            "correspondence": [["exp0", "exp1", "exp2", "exp3"]]
+        }
+    ]
+}

@@ -1,0 +1,127 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "5",
+                        "label": "Me",
+                        "following": 10124,
+                        "follwers": 34507,
+                        "name": "Neo4j"
+                    },
+                    {
+                        "element_id": "6",
+                        "label": "User",
+                        "following": 51280,
+                        "name": "Right Relevance",
+                        "follwers": 51280
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "User",
+                        "following": 1124,
+                        "follwers": 1124,
+                        "name": "Philip Rathle"
+                    },
+                    {
+                        "element_id": "8",
+                        "label": "User",
+                        "following": 162,
+                        "follwers": 162,
+                        "name": "Brant Boehmann"
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "User",
+                        "following": 1568,
+                        "follwers": 1568,
+                        "name": "NetScience"
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "User",
+                        "following": 47,
+                        "follwers": 47,
+                        "name": "Stuart Laurie"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "FOLLOWS",
+                        "element_id": "4",
+                        "start": "6",
+                        "end": "5"
+                    },
+                    {
+                        "label": "FOLLOWS",
+                        "element_id": "5",
+                        "start": "10",
+                        "end": "5"
+                    },
+                    {
+                        "label": "AMPLIFIES",
+                        "element_id": "6",
+                        "start": "5",
+                        "end": "8"
+                    },
+                    {
+                        "label": "FOLLOWS",
+                        "element_id": "7",
+                        "start": "5",
+                        "end": "7"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "8"
+                            ],
+                            "Brant Boehmann"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "name"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [
+                {
+                    "operator": "max",
+                    "property": "follwers",
+                    "data": ["n6", "n10"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "min",
+                    "property": "follwers",
+                    "data": ["n6", "n10"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "avg",
+                    "property": "following",
+                    "data": ["n6", "n10"],
+                    "lhs": {},
+                    "rhs": {}
+                }
+            ],
+            "correspondence": [
+                ["n0", "exp0", "exp1", "exp2"]
+            ]
+        }
+    ]
+}

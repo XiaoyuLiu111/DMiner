@@ -1,0 +1,61 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "3",
+                        "label": "Movie",
+                        "tagline": "At the edge of the world, his journey begins",
+                        "title": "Cast Away",
+                        "released": 2000
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "Movie",
+                        "tagline": "This Holiday Season… Believe",
+                        "title": "The Polar Express",
+                        "released": 2004
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Movie",
+                        "tagline": "If he's crazy, what does that make you?",
+                        "title": "One Flew Over the Cuckoo's Nest",
+                        "released": 1975
+                    }
+                ],
+                "edges": []
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "3"
+                            ],
+                            "Cast Away"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "title"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ]
+            ]
+        }
+    ]
+}

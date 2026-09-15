@@ -1,0 +1,113 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "10",
+                        "label": "User"
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "User"
+                    },
+                    {
+                        "element_id": "12",
+                        "label": "User"
+                    },
+                    {
+                        "element_id": "13",
+                        "label": "User"
+                    },
+                    {
+                        "element_id": "14",
+                        "label": "Item"
+                    },
+                    {
+                        "element_id": "15",
+                        "label": "Item"
+                    },
+                    {
+                        "element_id": "16",
+                        "label": "Item"
+                    },
+                    {
+                        "element_id": "17",
+                        "label": "Item"
+                    },
+                    {
+                        "element_id": "18",
+                        "label": "Item"
+                    },
+                    {
+                        "element_id": "19",
+                        "label": "Item"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "likes",
+                        "element_id": "9",
+                        "start": "10",
+                        "end": "19"
+                    },
+                    {
+                        "label": "likes",
+                        "element_id": "10",
+                        "start": "11",
+                        "end": "14"
+                    },
+                    {
+                        "label": "likes",
+                        "element_id": "11",
+                        "start": "13",
+                        "end": "19"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "input": [["13"], "CompleteNode13"],
+                        "output": 0
+                    },
+                    {
+                        "input": [["10"], "CompleteNode10"],
+                        "output": 1
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    },
+                    {
+                        "output": 1,
+                        "property": "full"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [
+                {
+                    "operator": "count",
+                    "property": "full",
+                    "data": ["n19"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "count",
+                    "property": "full",
+                    "data": ["n19"],
+                    "lhs": {},
+                    "rhs": {}
+                }
+            ],
+            "correspondence": [["n0", "exp0"], ["n1", "exp1"]]
+        }
+    ]
+}

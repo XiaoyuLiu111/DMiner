@@ -1,0 +1,248 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "User",
+                        "name": "Neo4j"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "User",
+                        "name": "Angular"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "User",
+                        "name": "Sebastian Daschner"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "User",
+                        "name": "InfoWorld"
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "User",
+                        "name": "Luanne Misquitta"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "User",
+                        "name": "QuarkusIO"
+                    },
+                    {
+                        "element_id": "6",
+                        "label": "User",
+                        "name": "GraphAware"
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "User",
+                        "name": "Michael Simons"
+                    },
+                    {
+                        "element_id": "8",
+                        "label": "User",
+                        "name": "Nicolas Mervaillie"
+                    },
+                    {
+                        "element_id": "19",
+                        "label": "User",
+                        "name": "Stefan Kelle"
+                    },
+                    {
+                        "element_id": "20",
+                        "label": "User",
+                        "name": "Matthias Haeussler"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "RT_MENTIONS",
+                        "element_id": "0",
+                        "start": "0",
+                        "end": "1"
+                    },
+                    {
+                        "label": "FOLLOWS",
+                        "element_id": "1",
+                        "start": "0",
+                        "end": "2"
+                    },
+                    {
+                        "label": "INTERACT_WITH",
+                        "element_id": "2",
+                        "start": "0",
+                        "end": "20"
+                    },
+                    {
+                        "label": "RT_MENTIONS",
+                        "element_id": "3",
+                        "start": "0",
+                        "end": "3"
+                    },
+                    {
+                        "label": "RT_MENTIONS",
+                        "element_id": "4",
+                        "start": "4",
+                        "end": "5"
+                    },
+                    {
+                        "label": "RT_MENTIONS",
+                        "element_id": "5",
+                        "start": "4",
+                        "end": "6"
+                    },
+                    {
+                        "label": "FOLLOWS",
+                        "element_id": "14",
+                        "start": "8",
+                        "end": "4"
+                    },
+                    {
+                        "label": "FOLLOWS",
+                        "element_id": "15",
+                        "start": "19",
+                        "end": "4"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "Neo4j"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "1"
+                            ],
+                            "Angular"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "Neo4j"
+                        ]
+                    },
+                    {
+                        "output": 3,
+                        "input": [
+                            [
+                                "3"
+                            ],
+                            "InfoWorld"
+                        ]
+                    },
+                    {
+                        "output": 4,
+                        "input": [
+                            [
+                                "4"
+                            ],
+                            "Luanne Misquitta"
+                        ]
+                    },
+                    {
+                        "output": 5,
+                        "input": [
+                            [
+                                "5"
+                            ],
+                            "QuarkusIO"
+                        ]
+                    },
+                    {
+                        "output": 6,
+                        "input": [
+                            [
+                                "4"
+                            ],
+                            "Luanne Misquitta"
+                        ]
+                    },
+                    {
+                        "output": 7,
+                        "input": [
+                            [
+                                "6"
+                            ],
+                            "GraphAware"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "name"
+                    },
+                    {
+                        "output": 1,
+                        "property": "name"
+                    },
+                    {
+                        "output": 2,
+                        "property": "name"
+                    },
+                    {
+                        "output": 3,
+                        "property": "name"
+                    },
+                    {
+                        "output": 4,
+                        "property": "name"
+                    },
+                    {
+                        "output": 5,
+                        "property": "name"
+                    },
+                    {
+                        "output": 6,
+                        "property": "name"
+                    },
+                    {
+                        "output": 7,
+                        "property": "name"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "n1"
+                ],
+                [
+                    "n2",
+                    "n3"
+                ],
+                [
+                    "n4",
+                    "n5"
+                ],
+                [
+                    "n6",
+                    "n7"
+                ]
+            ]
+        }
+    ]
+}

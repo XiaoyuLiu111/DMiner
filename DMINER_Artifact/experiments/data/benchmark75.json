@@ -1,0 +1,526 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "ProductionCompany",
+                        "country": "USA",
+                        "name": "WaltDisney"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Movie",
+                        "year": "1998",
+                        "title": "Mulan"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Movie",
+                        "year": "1998",
+                        "title": "Beauty and the Beast"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "Movie",
+                        "year": "1997",
+                        "title": "George of the Jungle"
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "Movie",
+                        "year": "1997",
+                        "title": "That Darn Cat"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Movie",
+                        "year": "1999",
+                        "title": "The Straight Story"
+                    },
+                    {
+                        "element_id": "6",
+                        "label": "Movie",
+                        "year": "1999",
+                        "title": "Tarzan"
+                    },
+                    {
+                        "element_id": "14",
+                        "label": "Movie",
+                        "year": "2008",
+                        "title": "Tinker Bell"
+                    },
+                    {
+                        "element_id": "15",
+                        "label": "Movie",
+                        "year": "2011",
+                        "title": "Brave"
+                    },
+                    {
+                        "element_id": "17",
+                        "label": "Movie",
+                        "year": "2009",
+                        "title": "Earth"
+                    },
+                    {
+                        "element_id": "18",
+                        "label": "Movie",
+                        "year": "2010",
+                        "title": "Alice in Wonderland"
+                    },
+                    {
+                        "element_id": "19",
+                        "label": "Movie",
+                        "year": "2020",
+                        "title": "Hamilton"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "0",
+                        "start": "0",
+                        "end": "1"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "1",
+                        "start": "0",
+                        "end": "2"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "2",
+                        "start": "0",
+                        "end": "3"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "3",
+                        "start": "0",
+                        "end": "4"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "4",
+                        "start": "0",
+                        "end": "5"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "5",
+                        "start": "0",
+                        "end": "6"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "6",
+                        "start": "0",
+                        "end": "14"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "13",
+                        "start": "0",
+                        "end": "17"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "14",
+                        "start": "0",
+                        "end": "15"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "WaltDisney"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "14"
+                            ],
+                            "Tinker Bell"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "WaltDisney"
+                        ]
+                    },
+                    {
+                        "output": 3,
+                        "input": [
+                            [
+                                "15"
+                            ],
+                            "Brave"
+                        ]
+                    },
+                    {
+                        "output": 4,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "WaltDisney"
+                        ]
+                    },
+                    {
+                        "output": 5,
+                        "input": [
+                            [
+                                "17"
+                            ],
+                            "Earth"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "name"
+                    },
+                    {
+                        "output": 1,
+                        "property": "title"
+                    },
+                    {
+                        "output": 2,
+                        "property": "name"
+                    },
+                    {
+                        "output": 3,
+                        "property": "title"
+                    },
+                    {
+                        "output": 4,
+                        "property": "name"
+                    },
+                    {
+                        "output": 5,
+                        "property": "title"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "n1"
+                ],
+                [
+                    "n2",
+                    "n3"
+                ],
+                [
+                    "n4",
+                    "n5"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "7",
+                        "label": "ProductionCompany",
+                        "country": "USA",
+                        "name": "WaltDisney"
+                    },
+                    {
+                        "element_id": "8",
+                        "label": "ProductionCompany",
+                        "country": "USA",
+                        "name": "Universal Pictures"
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "Movie",
+                        "year": "2012",
+                        "title": "Frankenweenie"
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "Movie",
+                        "year": "2010",
+                        "title": "Robin Hood"
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "Movie",
+                        "year": "2011",
+                        "title": "Bridesmaids"
+                    },
+                    {
+                        "element_id": "12",
+                        "label": "Movie",
+                        "year": "2019",
+                        "title": "How to Train Your Dragon The Hidden World"
+                    },
+                    {
+                        "element_id": "13",
+                        "label": "Movie",
+                        "year": "2008",
+                        "title": "The Other Boleyn Girl"
+                    },
+                    {
+                        "element_id": "14",
+                        "label": "Movie",
+                        "year": "2012",
+                        "title": "Anna Karenina"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "6",
+                        "start": "7",
+                        "end": "9"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "7",
+                        "start": "8",
+                        "end": "10"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "8",
+                        "start": "8",
+                        "end": "11"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "9",
+                        "start": "8",
+                        "end": "12"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "10",
+                        "start": "8",
+                        "end": "13"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "11",
+                        "start": "8",
+                        "end": "14"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "7"
+                            ],
+                            "WaltDisney"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "9"
+                            ],
+                            "Frankenweenie"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "8"
+                            ],
+                            "Universal Pictures"
+                        ]
+                    },
+                    {
+                        "output": 3,
+                        "input": [
+                            [
+                                "10"
+                            ],
+                            "Robin Hood"
+                        ]
+                    },
+                    {
+                        "output": 4,
+                        "input": [
+                            [
+                                "8"
+                            ],
+                            "Universal Pictures"
+                        ]
+                    },
+                    {
+                        "output": 5,
+                        "input": [
+                            [
+                                "11"
+                            ],
+                            "Bridesmaids"
+                        ]
+                    },
+                    {
+                        "output": 6,
+                        "input": [
+                            [
+                                "8"
+                            ],
+                            "Universal Pictures"
+                        ]
+                    },
+                    {
+                        "output": 7,
+                        "input": [
+                            [
+                                "12"
+                            ],
+                            "How to Train Your Dragon The Hidden World"
+                        ]
+                    },
+                    {
+                        "output": 8,
+                        "input": [
+                            [
+                                "8"
+                            ],
+                            "Universal Pictures"
+                        ]
+                    },
+                    {
+                        "output": 9,
+                        "input": [
+                            [
+                                "13"
+                            ],
+                            "The Other Boleyn Girl"
+                        ]
+                    },
+                    {
+                        "output": 10,
+                        "input": [
+                            [
+                                "8"
+                            ],
+                            "Universal Pictures"
+                        ]
+                    },
+                    {
+                        "output": 11,
+                        "input": [
+                            [
+                                "14"
+                            ],
+                            "Anna Karenina"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "name"
+                    },
+                    {
+                        "output": 1,
+                        "property": "title"
+                    },
+                    {
+                        "output": 2,
+                        "property": "name"
+                    },
+                    {
+                        "output": 3,
+                        "property": "title"
+                    },
+                    {
+                        "output": 4,
+                        "property": "name"
+                    },
+                    {
+                        "output": 5,
+                        "property": "title"
+                    },
+                    {
+                        "output": 6,
+                        "property": "name"
+                    },
+                    {
+                        "output": 7,
+                        "property": "title"
+                    },
+                    {
+                        "output": 8,
+                        "property": "name"
+                    },
+                    {
+                        "output": 9,
+                        "property": "title"
+                    },
+                    {
+                        "output": 10,
+                        "property": "name"
+                    },
+                    {
+                        "output": 11,
+                        "property": "title"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "n1"
+                ],
+                [
+                    "n2",
+                    "n3"
+                ],
+                [
+                    "n4",
+                    "n5"
+                ],
+                [
+                    "n6",
+                    "n7"
+                ],
+                [
+                    "n8",
+                    "n9"
+                ],
+                [
+                    "n10",
+                    "n11"
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,580 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "8",
+                        "label": "ProductionCompany",
+                        "country": "USA",
+                        "name": "WaltDisney"
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "Movie",
+                        "year": "2008",
+                        "title": "Tinker Bell"
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "Movie",
+                        "year": "2012",
+                        "title": "Brave"
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "Movie",
+                        "year": "2009",
+                        "title": "Earth"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "6",
+                        "start": "8",
+                        "end": "9"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "7",
+                        "start": "8",
+                        "end": "11"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "8",
+                        "start": "8",
+                        "end": "10"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "8"
+                            ],
+                            "WaltDisney"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "10"
+                            ],
+                            "Brave"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "8"
+                            ],
+                            "WaltDisney"
+                        ]
+                    },
+                    {
+                        "output": 3,
+                        "input": [
+                            [
+                                "9"
+                            ],
+                            "Tinker Bell"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "name"
+                    },
+                    {
+                        "output": 1,
+                        "property": "title"
+                    },
+                    {
+                        "output": 2,
+                        "property": "name"
+                    },
+                    {
+                        "output": 3,
+                        "property": "title"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "n1"
+                ],
+                [
+                    "n2",
+                    "n3"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "6",
+                        "label": "ProductionCompany",
+                        "country": "USA",
+                        "name": "WaltDisney"
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "ProductionCompany",
+                        "country": "USA",
+                        "name": "Universal Pictures"
+                    },
+                    {
+                        "element_id": "8",
+                        "label": "ProductionCompany",
+                        "country": "UK",
+                        "name": "Eon Productions"
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "Movie",
+                        "year": "2012",
+                        "title": "Chimpanzee"
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "Movie",
+                        "year": "2012",
+                        "title": "Les Misérables"
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "Movie",
+                        "year": "2012",
+                        "title": "SkyFall"
+                    },
+                    {
+                        "element_id": "12",
+                        "label": "Movie",
+                        "year": "2021",
+                        "title": "No Time to Die "
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "3",
+                        "start": "6",
+                        "end": "9"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "4",
+                        "start": "7",
+                        "end": "10"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "5",
+                        "start": "8",
+                        "end": "12"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "6",
+                        "start": "8",
+                        "end": "11"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "6"
+                            ],
+                            "WaltDisney"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "9"
+                            ],
+                            "Chimpanzee"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "7"
+                            ],
+                            "Universal Pictures"
+                        ]
+                    },
+                    {
+                        "output": 3,
+                        "input": [
+                            [
+                                "10"
+                            ],
+                            "Les Misérables"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "name"
+                    },
+                    {
+                        "output": 1,
+                        "property": "title"
+                    },
+                    {
+                        "output": 2,
+                        "property": "name"
+                    },
+                    {
+                        "output": 3,
+                        "property": "title"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "n1"
+                ],
+                [
+                    "n2",
+                    "n3"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "4",
+                        "label": "ProductionCompany",
+                        "country": "USA",
+                        "name": "WaltDisney"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Movie",
+                        "year": "1998",
+                        "title": "Mulan"
+                    },
+                    {
+                        "element_id": "6",
+                        "label": "Movie",
+                        "year": "2002",
+                        "title": "The Hunchback of Notre Dame II"
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "Movie",
+                        "year": "2015",
+                        "title": "Cinderella"
+                    },
+                    {
+                        "element_id": "8",
+                        "label": "Movie",
+                        "year": "2007",
+                        "title": "Ratatouille"
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "Movie",
+                        "year": "2012",
+                        "title": "John Carter"
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "Movie",
+                        "year": "2008",
+                        "title": "High School Musical 3: Senior Year"
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "ProductionCompany",
+                        "country": "USA",
+                        "name": "Universal Pictures"
+                    },
+                    {
+                        "element_id": "12",
+                        "label": "Movie",
+                        "year": "2016",
+                        "title": "The Great Wall"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "3",
+                        "start": "4",
+                        "end": "5"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "4",
+                        "start": "4",
+                        "end": "6"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "5",
+                        "start": "4",
+                        "end": "7"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "6",
+                        "start": "4",
+                        "end": "8"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "7",
+                        "start": "4",
+                        "end": "9"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "8",
+                        "start": "4",
+                        "end": "10"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "9",
+                        "start": "11",
+                        "end": "12"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "4"
+                            ],
+                            "WaltDisney"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "10"
+                            ],
+                            "High School Musical 3: Senior Year"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "4"
+                            ],
+                            "WaltDisney"
+                        ]
+                    },
+                    {
+                        "output": 3,
+                        "input": [
+                            [
+                                "9"
+                            ],
+                            "John Carter"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "name"
+                    },
+                    {
+                        "output": 1,
+                        "property": "title"
+                    },
+                    {
+                        "output": 2,
+                        "property": "name"
+                    },
+                    {
+                        "output": 3,
+                        "property": "title"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "n1"
+                ],
+                [
+                    "n2",
+                    "n3"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "ProductionCompany",
+                        "country": "USA",
+                        "name": "Universal Pictures"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Movie",
+                        "year": "2008",
+                        "title": "The Incredible Hulk"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Movie",
+                        "year": "2008",
+                        "title": "The Other Boleyn Girl"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "Movie",
+                        "year": "2008",
+                        "title": "ABC"
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "ProductionCompany",
+                        "country": "",
+                        "name": "ABC Pictures"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "0",
+                        "start": "0",
+                        "end": "1"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "1",
+                        "start": "0",
+                        "end": "2"
+                    },
+                    {
+                        "label": "PRODUCED",
+                        "element_id": "2",
+                        "start": "4",
+                        "end": "3"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "Universal Pictures"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "2"
+                            ],
+                            "The Other Boleyn Girl"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "Universal Pictures"
+                        ]
+                    },
+                    {
+                        "output": 3,
+                        "input": [
+                            [
+                                "1"
+                            ],
+                            "The Incredible Hulk"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "name"
+                    },
+                    {
+                        "output": 1,
+                        "property": "title"
+                    },
+                    {
+                        "output": 2,
+                        "property": "name"
+                    },
+                    {
+                        "output": 3,
+                        "property": "title"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "n1"
+                ],
+                [
+                    "n2",
+                    "n3"
+                ]
+            ]
+        }
+    ]
+}

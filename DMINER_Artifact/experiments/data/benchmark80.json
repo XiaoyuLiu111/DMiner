@@ -1,0 +1,315 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "8",
+                        "label": "Person",
+                        "name": "Anne Freeman",
+                        "id": "640"
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "Person",
+                        "name": "Amanda Robertson",
+                        "id": "630"
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "Crime",
+                        "date": "19/08/2017",
+                        "last_outcome": "Unable to prosecute suspect",
+                        "type": "Public order"
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "Officer",
+                        "name": "Lilian Dubbin",
+                        "rank": "Sergeant",
+                        "id": "1551"
+                    },
+                    {
+                        "element_id": "12",
+                        "label": "Person",
+                        "name": "Pamela Gibson",
+                        "id": "50"
+                    },
+                    {
+                        "element_id": "13",
+                        "label": "Person",
+                        "name": "Stephanie Hughes",
+                        "id": "47"
+                    },
+                    {
+                        "element_id": "14",
+                        "label": "Crime",
+                        "date": "16/08/2017",
+                        "last_outcome": "Unable to prosecute suspect",
+                        "type": "Violence and sexual offences"
+                    },
+                    {
+                        "element_id": "15",
+                        "label": "Officer",
+                        "name": "Eal Coulton",
+                        "rank": "Inspector",
+                        "id": "2110"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "KNOWS",
+                        "element_id": "6",
+                        "start": "8",
+                        "end": "9"
+                    },
+                    {
+                        "label": "PARTY_TO",
+                        "element_id": "7",
+                        "start": "9",
+                        "end": "10"
+                    },
+                    {
+                        "label": "INVESTIGATED_BY",
+                        "element_id": "8",
+                        "start": "10",
+                        "end": "11"
+                    },
+                    {
+                        "label": "KNOWS",
+                        "element_id": "9",
+                        "start": "12",
+                        "end": "13"
+                    },
+                    {
+                        "label": "PARTY_TO",
+                        "element_id": "10",
+                        "start": "13",
+                        "end": "14"
+                    },
+                    {
+                        "label": "INVESTIGATED_BY",
+                        "element_id": "11",
+                        "start": "14",
+                        "end": "15"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "input": [["8"], "CompleteNode8"],
+                        "output": 0
+                    },
+                    {
+                        "input": [["9"], "CompleteNode9"],
+                        "output": 1
+                    },
+                    {
+                        "input": [["11"], "CompleteNode11"],
+                        "output": 2
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    },
+                    {
+                        "output": 1,
+                        "property": "full"
+                    },
+                    {
+                        "output": 2,
+                        "property": "full"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [
+                {
+                    "operator": "count",
+                    "property": "full",
+                    "data": ["n10"],
+                    "lhs": {},
+                    "rhs": {}
+                }
+            ],
+            "correspondence": [["n0", "n1", "n2", "exp0"]]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Person",
+                        "name": "Denise Brown",
+                        "id": "1155"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Person",
+                        "name": "Joan Flores",
+                        "id": "993"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Crime",
+                        "date": "1/08/2017",
+                        "last_outcome": "Investigation complete; no suspect identified",
+                        "type": "Vehicle crime"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "Officer",
+                        "name": "Jody Headech",
+                        "rank": "Sergeant",
+                        "id": "1718"
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "Person",
+                        "name": "Anne Kimberly",
+                        "id": "640"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Person",
+                        "name": "Craig Marshall",
+                        "id": "1088"
+                    },
+                    {
+                        "element_id": "6",
+                        "label": "Crime",
+                        "date": "7/08/2017",
+                        "type": "Public order"
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "Officer",
+                        "name": "Rand Bunworth",
+                        "rank": "Staff Sergeant",
+                        "id": "2078"
+                    },
+                    {
+                        "element_id": "8",
+                        "label": "Person",
+                        "name": "James Kim",
+                        "id": "171"
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "Crime",
+                        "date": "6/08/2017",
+                        "last_outcome": "Investigation complete; no suspect identified",
+                        "type": "Vehicle crime"
+                    },
+                    {
+                        "element_id": "20",
+                        "label": "Officer",
+                        "name": "Lenette Buddock",
+                        "rank": "Senior Sergeant",
+                        "id": "1723"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "KNOWS",
+                        "element_id": "0",
+                        "start": "0",
+                        "end": "1"
+                    },
+                    {
+                        "label": "PARTY_TO",
+                        "element_id": "1",
+                        "start": "1",
+                        "end": "2"
+                    },
+                    {
+                        "label": "INVESTIGATED_BY",
+                        "element_id": "2",
+                        "start": "2",
+                        "end": "3"
+                    },
+                    {
+                        "label": "KNOWS",
+                        "element_id": "3",
+                        "start": "4",
+                        "end": "5"
+                    },
+                    {
+                        "label": "PARTY_TO",
+                        "element_id": "4",
+                        "start": "5",
+                        "end": "6"
+                    },
+                    {
+                        "label": "INVESTIGATED_BY",
+                        "element_id": "5",
+                        "start": "6",
+                        "end": "7"
+                    },
+                    {
+                        "label": "PARTY_TO",
+                        "element_id": "6",
+                        "start": "8",
+                        "end": "9"
+                    },
+                    {
+                        "label": "INVESTIGATED_BY",
+                        "element_id": "14",
+                        "start": "9",
+                        "end": "20"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "input": [["0"], "CompleteNode0"],
+                        "output": 0
+                    },
+                    {
+                        "input": [["1"], "CompleteNode1"],
+                        "output": 1
+                    },
+                    {
+                        "input": [["3"], "CompleteNode3"],
+                        "output": 2
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "full"
+                    },
+                    {
+                        "output": 1,
+                        "property": "full"
+                    },
+                    {
+                        "output": 2,
+                        "property": "full"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [
+                {
+                    "operator": "count",
+                    "property": "full",
+                    "data": ["n2"],
+                    "lhs": {},
+                    "rhs": {}
+                }
+            ],
+            "correspondence": [["n0", "n1", "n2", "exp0"]]
+        }
+    ]
+}

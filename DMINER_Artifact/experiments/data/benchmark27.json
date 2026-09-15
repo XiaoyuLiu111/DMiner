@@ -1,0 +1,338 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Student",
+                        "firstname": "Kim",
+                        "lastname": "Lee"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Course",
+                        "name": "math"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Student",
+                        "firstname": "Katherine",
+                        "lastname": "Lee"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "Student",
+                        "firstname": "Lucy",
+                        "lastname": "Tang"
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "Course",
+                        "name": "physics"
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "Student",
+                        "firstname": "Katherine",
+                        "lastname": "White"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "ENROLLEDIN",
+                        "element_id": "0",
+                        "start": "0",
+                        "end": "1"
+                    },
+                    {
+                        "label": "ENROLLEDIN",
+                        "element_id": "1",
+                        "start": "2",
+                        "end": "1"
+                    },
+                    {
+                        "label": "ENROLLEDIN",
+                        "element_id": "2",
+                        "start": "3",
+                        "end": "4"
+                    },
+                    {
+                        "label": "ENROLLEDIN",
+                        "element_id": "3",
+                        "start": "10",
+                        "end": "4"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "2"
+                            ],
+                            "Katherine"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "Kim"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "1"
+                            ],
+                            "math"
+                        ]
+                    },
+                    {
+                        "output": 3,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "Kim"
+                        ]
+                    },
+                    {
+                        "output": 4,
+                        "input": [
+                            [
+                                "2"
+                            ],
+                            "Katherine"
+                        ]
+                    },
+                    {
+                        "output": 5,
+                        "input": [
+                            [
+                                "1"
+                            ],
+                            "math"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "firstname"
+                    },
+                    {
+                        "output": 1,
+                        "property": "firstname"
+                    },
+                    {
+                        "output": 2,
+                        "property": "name"
+                    },
+                    {
+                        "output": 3,
+                        "property": "firstname"
+                    },
+                    {
+                        "output": 4,
+                        "property": "firstname"
+                    },
+                    {
+                        "output": 5,
+                        "property": "name"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "n1",
+                    "n2"
+                ],
+                [
+                    "n3",
+                    "n4",
+                    "n5"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Student",
+                        "firstname": "Luke",
+                        "lastname": "Tang"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Course",
+                        "name": "chemistry"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Student",
+                        "firstname": "Matthew",
+                        "lastname": "Brown"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "Student",
+                        "firstname": "James",
+                        "lastname": "Curren"
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "Course",
+                        "name": "history"
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "Student",
+                        "firstname": "Matt",
+                        "lastname": "Curren"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "ENROLLEDIN",
+                        "element_id": "0",
+                        "start": "0",
+                        "end": "1"
+                    },
+                    {
+                        "label": "ENROLLEDIN",
+                        "element_id": "1",
+                        "start": "2",
+                        "end": "1"
+                    },
+                    {
+                        "label": "ENROLLEDIN",
+                        "element_id": "2",
+                        "start": "3",
+                        "end": "4"
+                    },
+                    {
+                        "label": "ENROLLEDIN",
+                        "element_id": "6",
+                        "start": "10",
+                        "end": "4"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "10"
+                            ],
+                            "Matt"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "3"
+                            ],
+                            "James"
+                        ]
+                    },
+                    {
+                        "output": 2,
+                        "input": [
+                            [
+                                "4"
+                            ],
+                            "history"
+                        ]
+                    },
+                    {
+                        "output": 3,
+                        "input": [
+                            [
+                                "3"
+                            ],
+                            "James"
+                        ]
+                    },
+                    {
+                        "output": 4,
+                        "input": [
+                            [
+                                "10"
+                            ],
+                            "Matt"
+                        ]
+                    },
+                    {
+                        "output": 5,
+                        "input": [
+                            [
+                                "4"
+                            ],
+                            "history"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "firstname"
+                    },
+                    {
+                        "output": 1,
+                        "property": "firstname"
+                    },
+                    {
+                        "output": 2,
+                        "property": "name"
+                    },
+                    {
+                        "output": 3,
+                        "property": "firstname"
+                    },
+                    {
+                        "output": 4,
+                        "property": "firstname"
+                    },
+                    {
+                        "output": 5,
+                        "property": "name"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0",
+                    "n1",
+                    "n2"
+                ],
+                [
+                    "n3",
+                    "n4",
+                    "n5"
+                ]
+            ]
+        }
+    ]
+}

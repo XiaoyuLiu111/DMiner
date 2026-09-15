@@ -1,0 +1,194 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "7",
+                        "label": "Me",
+                        "following": 10124,
+                        "follwers": 34507,
+                        "name": "Neo4j"
+                    },
+                    {
+                        "element_id": "8",
+                        "label": "User",
+                        "following": 51280,
+                        "name": "Right Relevance",
+                        "follwers": 51280
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "User",
+                        "following": 1124,
+                        "follwers": 1124,
+                        "name": "Philip Rathle"
+                    },
+                    {
+                        "element_id": "15",
+                        "label": "User",
+                        "following": 162,
+                        "follwers": 162,
+                        "name": "Brant Boehmann"
+                    },
+                    {
+                        "element_id": "16",
+                        "label": "User",
+                        "following": 1568,
+                        "follwers": 1568,
+                        "name": "NetScience"
+                    },
+                    {
+                        "element_id": "17",
+                        "label": "User",
+                        "following": 47,
+                        "follwers": 47,
+                        "name": "Stuart Laurie"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "FOLLOWS",
+                        "element_id": "5",
+                        "start": "8",
+                        "end": "7"
+                    },
+                    {
+                        "label": "INTERACTS_WITH",
+                        "element_id": "6",
+                        "start": "17",
+                        "end": "7"
+                    },
+                    {
+                        "label": "AMPLIFIES",
+                        "element_id": "7",
+                        "start": "7",
+                        "end": "15"
+                    },
+                    {
+                        "label": "FOLLOWS",
+                        "element_id": "11",
+                        "start": "7",
+                        "end": "9"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "15"
+                            ],
+                            "Brant Boehmann"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "name"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [
+                {
+                    "operator": "-",
+                    "property": "",
+                    "data": [],
+                    "lhs": {
+                        "operator": "/",
+                        "property": "",
+                        "data": [],
+                        "lhs": {
+                            "operator": "max",
+                            "property": "follwers",
+                            "data": ["n9"],
+                            "lhs": {},
+                            "rhs": {}
+                        },
+                        "rhs": {
+                            "operator": "avg",
+                            "property": "follwers",
+                            "data": ["n9"],
+                            "lhs": {},
+                            "rhs": {}
+                        }
+                    },
+                    "rhs": {
+                        "operator": "/",
+                        "property": "",
+                        "data": [],
+                        "lhs": {
+                            "operator": "min",
+                            "property": "follwers",
+                            "data": ["n9"],
+                            "lhs": {},
+                            "rhs": {}
+                        },
+                        "rhs": {
+                            "operator": "avg",
+                            "property": "follwers",
+                            "data": ["n9"],
+                            "lhs": {},
+                            "rhs": {}
+                        }
+                    }
+                },
+                {
+                    "operator": "-",
+                    "property": "",
+                    "data": [],
+                    "lhs": {
+                        "operator": "/",
+                        "property": "",
+                        "data": [],
+                        "lhs": {
+                            "operator": "max",
+                            "property": "follwers",
+                            "data": ["n15"],
+                            "lhs": {},
+                            "rhs": {}
+                        },
+                        "rhs": {
+                            "operator": "avg",
+                            "property": "follwers",
+                            "data": ["n15"],
+                            "lhs": {},
+                            "rhs": {}
+                        }
+                    },
+                    "rhs": {
+                        "operator": "/",
+                        "property": "",
+                        "data": [],
+                        "lhs": {
+                            "operator": "min",
+                            "property": "follwers",
+                            "data": ["n15"],
+                            "lhs": {},
+                            "rhs": {}
+                        },
+                        "rhs": {
+                            "operator": "avg",
+                            "property": "follwers",
+                            "data": ["n15"],
+                            "lhs": {},
+                            "rhs": {}
+                        }
+                    }
+                }
+            ],
+            "correspondence": [
+                [
+                    "n0", "exp0", "exp1"
+                ]
+            ]
+        }
+    ]
+}

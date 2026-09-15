@@ -1,0 +1,316 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "8",
+                        "label": "Order",
+                        "shipCountry": "USA"
+                    },
+                    {
+                        "element_id": "9",
+                        "label": "Order",
+                        "shipCountry": "Mexico"
+                    },
+                    {
+                        "element_id": "10",
+                        "label": "Order",
+                        "shipCountry": "USA"
+                    },
+                    {
+                        "element_id": "11",
+                        "label": "Order",
+                        "shipCountry": "Canada"
+                    },
+                    {
+                        "element_id": "12",
+                        "label": "Product",
+                        "productName": "Spegesild"
+                    },
+                    {
+                        "element_id": "13",
+                        "label": "Product",
+                        "productName": "Snail"
+                    },
+                    {
+                        "element_id": "14",
+                        "label": "Product",
+                        "productName": "Keyboard"
+                    },
+                    {
+                        "element_id": "15",
+                        "label": "Product",
+                        "productName": "Sugar"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "ORDERS",
+                        "element_id": "4",
+                        "start": "8",
+                        "end": "13",
+                        "discount": "0.5"
+                    },
+                    {
+                        "label": "ORDERS",
+                        "element_id": "5",
+                        "start": "9",
+                        "end": "12",
+                        "discount": "0.15"
+                    },
+                    {
+                        "label": "ORDERS",
+                        "element_id": "6",
+                        "start": "10",
+                        "end": "14",
+                        "discount": "0.25"
+                    },
+                    {
+                        "label": "ORDERS",
+                        "element_id": "7",
+                        "start": "11",
+                        "end": "15",
+                        "discount": "0.35"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "13"
+                            ],
+                            "Snail"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "14"
+                            ],
+                            "Keyboard"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "productName"
+                    },
+                    {
+                        "output": 1,
+                        "property": "productName"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ],
+                [
+                    "n1"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Order",
+                        "shipCountry": "USA"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Order",
+                        "shipCountry": "Mexico"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Order",
+                        "shipCountry": "China"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "Order",
+                        "shipCountry": "Scottland"
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "Product",
+                        "productName": "Cookie"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Product",
+                        "productName": "Drawer"
+                    },
+                    {
+                        "element_id": "13",
+                        "label": "Product",
+                        "productName": "Wood"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "ORDERS",
+                        "element_id": "0",
+                        "start": "2",
+                        "end": "4",
+                        "discount": "0.5"
+                    },
+                    {
+                        "label": "ORDERS",
+                        "element_id": "6",
+                        "start": "0",
+                        "end": "5",
+                        "discount": "0.35"
+                    },
+                    {
+                        "label": "ORDERS",
+                        "element_id": "7",
+                        "start": "1",
+                        "end": "13",
+                        "discount": "0.25"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "4"
+                            ],
+                            "Cookie"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "13"
+                            ],
+                            "Wood"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "productName"
+                    },
+                    {
+                        "output": 1,
+                        "property": "productName"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ],
+                [
+                    "n1"
+                ]
+            ]
+        },
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Product",
+                        "productName": "Spegesild"
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "Order",
+                        "shipCountry": "Germany"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "Product",
+                        "productName": "Clam Chowder"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "ORDERS",
+                        "element_id": "0",
+                        "start": "2",
+                        "end": "3",
+                        "discount": "0.25"
+                    },
+                    {
+                        "label": "ORDERS",
+                        "element_id": "1",
+                        "start": "2",
+                        "end": "0",
+                        "discount": "0.2"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "3"
+                            ],
+                            "Clam Chowder"
+                        ]
+                    },
+                    {
+                        "output": 1,
+                        "input": [
+                            [
+                                "0"
+                            ],
+                            "Spegesild"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "productName"
+                    },
+                    {
+                        "output": 1,
+                        "property": "productName"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [],
+            "correspondence": [
+                [
+                    "n0"
+                ],
+                [
+                    "n1"
+                ]
+            ]
+        }
+    ]
+}

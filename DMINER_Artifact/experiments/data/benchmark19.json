@@ -1,0 +1,77 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "3",
+                        "label": "Airport",
+                        "city": "New York",
+                        "capacity": 1000
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "Airport",
+                        "city": "New York",
+                        "capacity": 600
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "Airport",
+                        "city": "New York",
+                        "capacity": 9900
+                    },
+                    {
+                        "element_id": "6",
+                        "label": "Airport",
+                        "city": "New York",
+                        "capacity": 100
+                    },
+                    {
+                        "element_id": "7",
+                        "label": "Airport",
+                        "city": "New York",
+                        "capacity": 200
+                    }
+                ],
+                "edges": []
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "3", "4", "5", "6", "7"
+                            ],
+                            "New York"
+                        ]
+                    }],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "city"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [
+                {
+                    "operator": "sum",
+                    "property": "capacity",
+                    "data": ["n3", "n4", "n5", "n6", "n7"],
+                    "lhs": {},
+                    "rhs": {}
+                }
+            ],
+            "correspondence": [
+                [
+                    "n0","exp0"
+                ]
+            ]
+        }
+    ]
+}

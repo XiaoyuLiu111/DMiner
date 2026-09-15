@@ -1,0 +1,60 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Node",
+                        "number": 1,
+                        "name": "A"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "Node",
+                        "number": 2,
+                        "name": "A"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "0", "1"
+                            ],
+                            "A"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "name"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [
+                 {
+                    "operator": "sum",
+                    "property": "number",
+                    "data": ["n0", "n1"],
+                    "lhs": {},
+                    "rhs": {}
+                }
+            ],
+            "correspondence": [
+                [
+                    "n0", "exp0"
+                ]
+            ]
+        }
+    ]
+}

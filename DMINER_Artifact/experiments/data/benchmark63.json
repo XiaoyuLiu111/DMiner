@@ -1,0 +1,122 @@
+{
+    "demonstrations": [
+        {
+            "inputGraph": {
+                "nodes": [
+                    {
+                        "element_id": "0",
+                        "label": "Me",
+                        "following": 10124,
+                        "follwers": 34507,
+                        "name": "Neo4j"
+                    },
+                    {
+                        "element_id": "1",
+                        "label": "User",
+                        "following": 51280,
+                        "name": "Right Relevance",
+                        "follwers": 51280
+                    },
+                    {
+                        "element_id": "2",
+                        "label": "User",
+                        "following": 1124,
+                        "follwers": 1124,
+                        "name": "Philip Rathle"
+                    },
+                    {
+                        "element_id": "3",
+                        "label": "User",
+                        "following": 162,
+                        "follwers": 162,
+                        "name": "Brant Boehmann"
+                    },
+                    {
+                        "element_id": "4",
+                        "label": "User",
+                        "following": 1568,
+                        "follwers": 1568,
+                        "name": "NetScience"
+                    },
+                    {
+                        "element_id": "5",
+                        "label": "User",
+                        "following": 47,
+                        "follwers": 47,
+                        "name": "Stuart Laurie"
+                    }
+                ],
+                "edges": [
+                    {
+                        "label": "FOLLOWS",
+                        "element_id": "0",
+                        "start": "1",
+                        "end": "0"
+                    },
+                    {
+                        "label": "FOLLOWS",
+                        "element_id": "1",
+                        "start": "5",
+                        "end": "0"
+                    },
+                    {
+                        "label": "AMPLIFIES",
+                        "element_id": "2",
+                        "start": "0",
+                        "end": "3"
+                    },
+                    {
+                        "label": "FOLLOWS",
+                        "element_id": "10",
+                        "start": "0",
+                        "end": "2"
+                    }
+                ]
+            },
+            "mapping1": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "input": [
+                            [
+                                "3"
+                            ],
+                            "Boston Scientific"
+                        ]
+                    }
+                ],
+                "edges": []
+            },
+            "mapping2": {
+                "nodes": [
+                    {
+                        "output": 0,
+                        "property": "name"
+                    }
+                ],
+                "edges": []
+            },
+            "mapping3": [
+                {
+                    "operator": "max",
+                    "property": "follwers",
+                    "data": ["n2", "n2"],
+                    "lhs": {},
+                    "rhs": {}
+                },
+                {
+                    "operator": "count",
+                    "property": "full",
+                    "data": ["n2", "n2"],
+                    "lhs": {},
+                    "rhs": {}
+                }
+            ],
+            "correspondence": [
+                [
+                    "n0", "exp0", "exp1"
+                ]
+            ]
+        }
+    ]
+}
