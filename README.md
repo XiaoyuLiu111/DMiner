@@ -1,4 +1,4 @@
-**DMiner: Synthesizing graph queries from demonstrations through graph mining and deductive reasoning**
+# DMiner: Synthesizing graph queries from demonstrations through graph mining and deductive reasoning
 
 DMiner is a **program synthesis tool that automatically constructs graph queries from user demonstrations**. Users provide small input graphs and tables of computation expressions describing their intended computations. DMiner infers the graph patterns, filtering conditions, and return expressions needed to construct a query consistent with those demonstrations.
 
