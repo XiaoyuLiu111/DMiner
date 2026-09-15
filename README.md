@@ -1709,7 +1709,7 @@ The research artifact runs in **Docker**, with Neo4j for query evaluation.
 - Allocate **at least 15.5 GB RAM and more than 6 CPUs** to Docker. In Docker Desktop, use **Settings → Resources**.
 - Download and extract the [artifact archive](https://doi.org/10.5281/zenodo.21930599), then open a terminal in its repository directory.
 
-### 1. Load the image and start the container
+#### 1. Load the image and start the container
 
 Run on your **host machine** (approximately 3 minutes):
 
@@ -1720,7 +1720,7 @@ docker compose up -d
 
 Open the running `dminer` container’s terminal using **Docker Desktop → Exec**, or **Attach Shell** in the VS Code Docker extension. **Run all remaining commands inside the container.**
 
-### 2. Load the data and compile
+#### 2. Load the data and compile
 
 ```bash
 tar -C /data -xzf /database-snapshot/neo4j-data.tar.gz
@@ -1738,7 +1738,7 @@ cypher-shell -u neo4j -p pswd1234 -d experiment9demonstration0 \
 
 Expected node count: **8**. The credentials above belong to the bundled experiment database.
 
-### 3. Run a smoke test
+#### 3. Run a smoke test
 
 Confirm Neo4j is running with `neo4j status`, then run:
 
@@ -1800,7 +1800,7 @@ python /DMINER_Artifact/experiments/scripts/average.py
 
 The paper reports approximately **0.6 seconds**; the artifact guide allows roughly **0.6–2 seconds** under Docker. These commands rerun DMiner, its ablations, and EUSolver. The supplied installation guide does not provide instructions for rerunning the paper’s LLM baselines.
 
-## Try your own demonstration
+### Try your own demonstration
 
 Add a row to `/DMINER_Artifact/experiments/reusability/newQuery.tsv` with an unused benchmark ID greater than 100. Each row supports up to four demonstrations, pairing `query1`–`query4` (Cypher `CREATE` queries) with `Output1`–`Output4` (symbolic output tables).
 
